@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simplexity", "Simplexity\Simplexity.csproj", "{D4A4343F-EB66-4178-ACAF-FB3EC7F535BA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D4A4343F-EB66-4178-ACAF-FB3EC7F535BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4A4343F-EB66-4178-ACAF-FB3EC7F535BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4A4343F-EB66-4178-ACAF-FB3EC7F535BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4A4343F-EB66-4178-ACAF-FB3EC7F535BA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E09D830C-6CB1-4957-8180-31F2E5657058}
+	EndGlobalSection
+EndGlobal
