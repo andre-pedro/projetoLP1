@@ -3,6 +3,9 @@
 
 ## Conclusão
 
+## Repositório do Projeto
+ * O repositório do projeto está disponível através do seguinte [link][rp].
+
 ## Metadados
 
  Autores: 
@@ -23,3 +26,4 @@ Instituição:
 [TA]:https://github.com/synpse
 [lamv]:https://www.ulusofona.pt/licenciatura/aplicacoes-multimedia-e-videojogos
 [ULHT]:https://www.ulusofona.pt/
+[rp]:https://github.com/andre-pedro/projetoLP1
