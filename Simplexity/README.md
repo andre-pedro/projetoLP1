@@ -6,9 +6,9 @@
 ## Metadados
 
  Autores: 
- * [André Santos][AS]
- * [André Pedro][AP]
- * [Tiago Alves][TA]
+ * [André Santos][AS], nº a21700034
+ * [André Pedro][AP], nº a21701115
+ * [Tiago Alves][TA], nº a21701031
 
 Curso:
 * [Licenciatura em Aplicações Multimédia e Videojogos][lamv]
