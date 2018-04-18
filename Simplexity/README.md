@@ -6,6 +6,6 @@
 * Autores: [André Santos][André Pedro][Tiago Alves]
 
 
-[André Santos]
-[André Pedro]
-[Tiago Alves]
+[André Santos]:https://github.com/Snigy24
+[André Pedro]:https://github.com/andre-pedro
+[Tiago Alves]:https://github.com/synpse
