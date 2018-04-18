@@ -4,8 +4,9 @@
 ## Metadados
 
  Autores: 
- * [André Santos][André Pedro] 
- * [][Tiago Alves]
+ * [André Santos][AS]
+ * [André Pedro][AP]
+ * [Tiago Alves][TA]
 
 Curso:
 *[Licenciatura em Aplicações Multimédia e Videojogos][lamv]
@@ -15,7 +16,7 @@ Instituição:
 
 
 
-[André Santos]:https://github.com/Snigy24
-[André Pedro]:https://github.com/andre-pedro
-[Tiago Alves]:https://github.com/synpse
+[AS]:https://github.com/Snigy24
+[AP]:https://github.com/andre-pedro
+[TA]:https://github.com/synpse
 [lamv]:https://www.ulusofona.pt/licenciatura/aplicacoes-multimedia-e-videojogos
