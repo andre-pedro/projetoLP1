@@ -1,6 +1,8 @@
 # Relatório Projecto LP1
 
 
+## Conclusão
+
 ## Metadados
 
  Autores: 
@@ -9,10 +11,10 @@
  * [Tiago Alves][TA]
 
 Curso:
-*[Licenciatura em Aplicações Multimédia e Videojogos][lamv]
+* [Licenciatura em Aplicações Multimédia e Videojogos][lamv]
 	
 Instituição: 
-*[Universidade Lusófona de Humanidades e Tecnologias][ULHT]
+* [Universidade Lusófona de Humanidades e Tecnologias][ULHT]
 
 
 
@@ -20,3 +22,4 @@ Instituição:
 [AP]:https://github.com/andre-pedro
 [TA]:https://github.com/synpse
 [lamv]:https://www.ulusofona.pt/licenciatura/aplicacoes-multimedia-e-videojogos
+[ULHT]:https://www.ulusofona.pt/
