@@ -8,6 +8,19 @@ namespace Simplexity
 {
     class Position
     {
-        // Esta classe irá representar a localização da linha e coluna no tabuleiro
+
+        /// <summary>
+        /// Esta classe irá representar a localização
+        /// da linha e coluna no tabuleiro
+        /// </summary>
+
+        public int Linha { get; }
+        public int Coluna { get; }
+
+        public Position(int linha, int coluna)
+        {
+            Linha = linha;
+            Coluna = coluna;
+        }
     }
 }
