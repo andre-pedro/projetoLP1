@@ -18,7 +18,16 @@ namespace Simplexity
         {
             state = new State[7, 7];
 
-
         }
+
+        /*
+        //posiçoes
+        public State GetState(Position position)
+        {
+            return state[position.Linha, position.Coluna];
+        }
+        */
+
+
     }
 }
