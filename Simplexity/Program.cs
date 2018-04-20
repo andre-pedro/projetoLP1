@@ -57,19 +57,7 @@ namespace Simplexity
 
                     Console.ForegroundColor = ConsoleColor.Gray;
                     Console.Clear();
-                    Console.WriteLine("[Simulated_Layout] ");
-                    Console.WriteLine();
-                    Console.WriteLine("7      |   |   |   |   |   |   |");
-                    Console.WriteLine("6      |   |   |   |   |   |   |");
-                    Console.WriteLine("5      |   |   |   |   |   |   |");
-                    Console.WriteLine("4      |   |   |   |   |   |   |");
-                    Console.WriteLine("3      |   |   |   |   |   |   |");
-                    Console.WriteLine("2      |   |   |   |   |   |   |");
-                    Console.WriteLine("1      |   |   |   |   |   |   |");
-                    Console.WriteLine();
-                    Console.WriteLine();
-                    Console.WriteLine("       1   2   3   4   5   6   7");
-                    Console.WriteLine();
+                    Console.WriteLine("[Board_Goes_Here] ");
                     Console.WriteLine();
                     Console.Write("[Simulated_Jogador 1 - ");
                     Console.ForegroundColor = ConsoleColor.White;
@@ -114,7 +102,6 @@ namespace Simplexity
 
             // Fim de jogo
             Console.Clear();
-            Console.WriteLine();
             Console.WriteLine("Game Over!");
             Console.ReadKey();
             // Restart
