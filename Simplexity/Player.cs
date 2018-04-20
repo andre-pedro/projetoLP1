@@ -41,12 +41,12 @@ namespace Simplexity
             }
         }
 
-        public State Escolhapecas(Board, Board, int jogador)
+        public State Escolhapecas(Board board, int jogador)
         {
-            Console.WriteLine("Escolha entre cubo (1) ou cilindro (2)");
+            Console.WriteLine("Escolha entre cubo [1] ou cilindro [2]");
             int pecaescolhida = Convert.ToInt32(Console.ReadLine());
-            State dafuqdoisayhere = chosen(pecaescolhida);
-            return dafuqdoisayhere;
+            State playerdecision = chosen(pecaescolhida);
+            return playerdecision;
         }
     }
 
