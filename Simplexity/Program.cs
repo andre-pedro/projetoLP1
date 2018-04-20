@@ -12,10 +12,26 @@ namespace Simplexity
         {
 
             // Chama Start()
-            Start();
+            //Start();
+
+            Board board = new Board();
+            Layout layout = new Layout();
+            Player white = new Player();
+            Player red = new Player();
+            int turnos = 10;
+
+
+            while (turnos != 0)
+            {
+                layout.Desenha(board);
+                
+            }
 
         }
 
+
+
+        /*
         static private void Start()
         {
             // Var. Misc
@@ -44,12 +60,12 @@ namespace Simplexity
                     int cubosBrancos = 11;
                     int cilindrosBrancos = 10;
                     int cubosVermelhos = 11;
-                    int cilindrosVermelhos = 10;
+                    int cilindrosVermelhos = 10;*/
 
                     /*
                     [SetPecas goes here?]
                     */
-
+                    /*
                     Console.ForegroundColor = ConsoleColor.Gray;
                     Console.Clear();
                     Console.WriteLine("[Board_Goes_Here] ");
@@ -63,7 +79,7 @@ namespace Simplexity
                     layout.Desenha(board);
                     */
 
-                    Console.WriteLine();
+                  /*  Console.WriteLine();
                     // info jogador 1
                     Console.Write("[Simulated_Jogador 1 - ");
                     Console.ForegroundColor = ConsoleColor.White;
@@ -124,9 +140,9 @@ namespace Simplexity
             Console.ReadKey();
             // Restart
             Start();
-        }
+        }*/
 
-        private static void AskPlay()
+     /*   private static void AskPlay()
         {
             Console.ForegroundColor = ConsoleColor.DarkYellow;
             Console.WriteLine();
@@ -145,6 +161,6 @@ namespace Simplexity
             Console.Write("[!]");
             Console.ForegroundColor = ConsoleColor.Gray;
             Console.Write("Jogada lida: " + askColuna + " " + askPeca);
-        }
+        }*/
     }
 }
