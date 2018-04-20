@@ -14,8 +14,24 @@ namespace Simplexity
         {
             for(int i = 0; i < 5; i++)
                 for(int j = 0; i <5;j++)
-                    simbolos[i,j] = simbolos
+                    simbolos[i,j] = 
         }
 
+        private char Pecas(State state)
+        {
+            switch (state)
+            {
+                case State.R:
+                    return 'R';
+                case State.r:
+                    return 'r';
+                case State.W:
+                    return 'W';
+                case State.w:
+                    return 'w';
+                case default:
+                    return '|';
+            }
+        }
     }
 }
