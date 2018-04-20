@@ -35,8 +35,14 @@ namespace Simplexity
          
 
 
+        /* TIAGOOO EU COMENTEI O TEU CODIGO PARA TESTAR ISTO EM CIMA
+         * 
+         se por acaso esqueci.me de descomentar algo toma atencao podes 
+         comentar o codigo em cima visto que ainda nao fucniona a 100%
+         baseado no jogo tic toe*/
 
-        /*
+
+        
         static private void Start()
         {
             // Var. Misc
@@ -70,7 +76,7 @@ namespace Simplexity
                     /*
                     [SetPecas goes here?]
                     */
-                    /*
+                    
                     Console.ForegroundColor = ConsoleColor.Gray;
                     Console.Clear();
                     Console.WriteLine("[Board_Goes_Here] ");
@@ -84,7 +90,7 @@ namespace Simplexity
                     layout.Desenha(board);
                     */
 
-                  /*  Console.WriteLine();
+                    Console.WriteLine();
                     // info jogador 1
                     Console.Write("[Simulated_Jogador 1 - ");
                     Console.ForegroundColor = ConsoleColor.White;
@@ -145,9 +151,9 @@ namespace Simplexity
             Console.ReadKey();
             // Restart
             Start();
-        }*/
+        }
 
-     /*   private static void AskPlay()
+        private static void AskPlay()
         {
             Console.ForegroundColor = ConsoleColor.DarkYellow;
             Console.WriteLine();
@@ -166,6 +172,6 @@ namespace Simplexity
             Console.Write("[!]");
             Console.ForegroundColor = ConsoleColor.Gray;
             Console.Write("Jogada lida: " + askColuna + " " + askPeca);
-        }*/
+        }
     }
 }
