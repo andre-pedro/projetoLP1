@@ -117,7 +117,8 @@ namespace Simplexity
             Console.WriteLine();
             Console.WriteLine("Game Over!");
             Console.ReadKey();
-
+            // Restart
+            Start();
         }
     }
 }
