@@ -92,6 +92,7 @@ namespace Simplexity
                         Console.Write("Branco");
                         Console.ForegroundColor = ConsoleColor.Gray;
                         Console.Write("]");
+                        AskPlay();
                     }
                     if (vez == 1)
                     {
@@ -99,6 +100,7 @@ namespace Simplexity
                         Console.Write("Vermelho");
                         Console.ForegroundColor = ConsoleColor.Gray;
                         Console.Write("]");
+                        AskPlay();
                     }
                     Console.WriteLine();
                     // info turnos
@@ -113,6 +115,15 @@ namespace Simplexity
             Console.ReadKey();
             // Restart
             Start();
+        }
+
+        private void AskPlay()
+        {
+            Console.Write("[!] Indicar coluna (1-7): ");
+            string askColuna = Console.ReadLine();
+            Console.WriteLine();
+            Console.Write("[!] Indicar coluna (1-7): ");
+            string askPeca = Console.ReadLine();
         }
     }
 }
