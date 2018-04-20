@@ -57,7 +57,7 @@ namespace Simplexity
 
                     Console.ForegroundColor = ConsoleColor.Gray;
                     Console.Clear();
-                    Console.WriteLine("[Show_World_Test] ");
+                    Console.WriteLine("[Simulated_Layout] ");
                     Console.WriteLine();
                     Console.WriteLine("7      |   |   |   |   |   |   |");
                     Console.WriteLine("6      |   |   |   |   |   |   |");
@@ -71,30 +71,45 @@ namespace Simplexity
                     Console.WriteLine("       1   2   3   4   5   6   7");
                     Console.WriteLine();
                     Console.WriteLine();
-                    Console.Write("[Jogador 1 - ");
+                    Console.Write("[Simulated_Jogador 1 - ");
                     Console.ForegroundColor = ConsoleColor.White;
                     Console.Write("Branco");
                     Console.ForegroundColor = ConsoleColor.Gray;
                     Console.Write("]");
                     Console.WriteLine();
-                    Console.WriteLine("Cubos Brancos: " + cubosBrancos);
-                    Console.WriteLine("Cilindros Brancos: " + cilindrosBrancos);
+                    Console.WriteLine("Simulated_Cubos Brancos: " + cubosBrancos);
+                    Console.WriteLine("Simulated_Cilindros Brancos: " + cilindrosBrancos);
                     Console.WriteLine();
                     Console.WriteLine();
-                    Console.Write("[Jogador 2 - ");
+                    Console.Write("[Simulated_Jogador 2 - ");
                     Console.ForegroundColor = ConsoleColor.Red;
                     Console.Write("Vermelho");
                     Console.ForegroundColor = ConsoleColor.Gray;
                     Console.Write("]");
                     Console.WriteLine();
-                    Console.WriteLine("Cubos Vermelhos: " + cubosVermelhos);
-                    Console.WriteLine("Cilindros Vermelhos: " + cilindrosVermelhos);
+                    Console.WriteLine("Simulated_Cubos Vermelhos: " + cubosVermelhos);
+                    Console.WriteLine("Simulated_Cilindros Vermelhos: " + cilindrosVermelhos);
                     Console.WriteLine();
                     Console.WriteLine();
                     Console.WriteLine("[Turno: " + turno + "]");
                     Console.WriteLine();
+                    Console.Write("[Vez do Jogador: ");
+                    if (vez == 0)
+                    {
+                        Console.ForegroundColor = ConsoleColor.White;
+                        Console.Write("Branco");
+                        Console.ForegroundColor = ConsoleColor.Gray;
+                        Console.Write("]");
+                    }
+                    if (vez == 1)
+                    {
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.Write("Vermelho");
+                        Console.ForegroundColor = ConsoleColor.Gray;
+                        Console.Write("]");
+                    }
+                    Console.ReadKey();
                 }
-                Console.ReadKey();
             }
         }
     }
