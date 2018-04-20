@@ -46,16 +46,22 @@ namespace Simplexity
                     int cubosVermelhos = 11;
                     int cilindrosVermelhos = 10;
 
+                    /*
+                    [SetPecas goes here?]
+                    */
+
                     Console.ForegroundColor = ConsoleColor.Gray;
                     Console.Clear();
                     Console.WriteLine("[Board_Goes_Here] ");
 
+                    /*
                     //para testar se desenha
                     Layout layout = new Layout();
                     Board board = new Board();
 
                     // another try
                     layout.Desenha(board);
+                    */
 
                     Console.WriteLine();
                     Console.Write("[Simulated_Jogador 1 - ");
