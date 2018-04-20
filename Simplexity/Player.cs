@@ -16,7 +16,7 @@ namespace Simplexity
         /// 
         /// </summary>
         /// <param name="board"></param>
-        /// <returns></returns>
+        /// <returns>a coordenada em que o jogador quer jogar </returns>
         public Position ColumnPosition(Board board)
         {
             Console.WriteLine("Escolha a coluna onde quer jogar");
@@ -29,8 +29,8 @@ namespace Simplexity
         /// <summary>
         /// 
         /// </summary>
-        /// <param name="colInput"></param>
-        /// <returns></returns>
+        /// <param name="colInput">Recolhe o inteiro que o jogador inseriu</param>
+        /// <returns>Posição (de 1 a 7) na qual o jogador escolheu jogar</returns>
         private Position NumberPosition(int colInput)
         {
             switch (colInput)
