@@ -23,5 +23,10 @@ namespace Simplexity
             Linha = linha;
             Coluna = coluna;
         }
+
+        public Position(int coluna)
+        {
+            Coluna = coluna;
+        }
     }
 }
