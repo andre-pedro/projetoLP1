@@ -11,7 +11,7 @@ namespace Simplexity
     /// </summary>
     class Layout
     {
-        char[,] simbolos = new char[5, 5];
+        char[,] simbolos = new char[7, 7];
 
 
         /// <summary>
@@ -20,9 +20,11 @@ namespace Simplexity
         /// <param name="board"></param>
         public void Desenha(Board board)
         {
-            for(int i = 0; i < 5; i++)
-                for(int j = 0; i <5;j++)
-                    simbolos[i,j] = 
+            for (int i = 0; i < 7; i++)
+                for (int j = 0; i < 7; j++)
+                    simbolos[i, j] = Pecas(board.GetState(new Position(i,j)));
+
+            Console.WriteLine($"{simbolos[0, 0]}");
         }
 
         /// <summary>
