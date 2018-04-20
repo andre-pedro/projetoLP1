@@ -84,6 +84,7 @@ namespace Simplexity
                     Console.WriteLine("Simulated_Cubos Vermelhos: " + cubosVermelhos);
                     Console.WriteLine("Simulated_Cilindros Vermelhos: " + cilindrosVermelhos);
                     Console.WriteLine();
+                    // info vez do jogador 1 || 2
                     Console.Write("[Vez do Jogador: ");
                     if (vez == 0)
                     {
@@ -100,6 +101,7 @@ namespace Simplexity
                         Console.Write("]");
                     }
                     Console.WriteLine();
+                    // info turnos
                     Console.WriteLine("[Turno: " + turno + "]");
                     Console.ReadKey();
                 }
