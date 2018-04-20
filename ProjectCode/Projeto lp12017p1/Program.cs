@@ -8,11 +8,6 @@ namespace Projeto_lp12017p1
 {
     class Program
     {
-        // V. Gerais
-        private static int cubosBrancos;
-        private static int cilindrosBrancos;
-        private static int cubosVermelhos;
-        private static int cilindrosVermelhos;
 
         // Var. Turnos
         private static int turno;
@@ -33,10 +28,10 @@ namespace Projeto_lp12017p1
             string s4 = "Prima [ENTER] para começar...";
 
             // Parametros
-            cubosBrancos = 11;
-            cilindrosBrancos = 10;
-            cubosVermelhos = 11;
-            cilindrosVermelhos = 10;
+            int cubosBrancos = 11;
+            int cilindrosBrancos = 10;
+            int cubosVermelhos = 11;
+            int cilindrosVermelhos = 10;
 
             // Start
             Console.ForegroundColor = ConsoleColor.Gray;
