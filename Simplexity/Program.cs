@@ -124,6 +124,7 @@ namespace Simplexity
             Console.WriteLine();
             Console.Write("[!] Indicar coluna (1-7): ");
             string askPeca = Console.ReadLine();
+            Console.WriteLine("Jogada lida: " + askColuna + " " + askPeca);
         }
     }
 }
