@@ -107,6 +107,15 @@ namespace Simplexity
                     Console.WriteLine("[Turno: " + turno + "]");
                     Console.ReadKey();
                 }
+                void AskPlay()
+                {
+                    Console.Write("[!] Indicar coluna (1-7): ");
+                    string askColuna = Console.ReadLine();
+                    Console.WriteLine();
+                    Console.Write("[!] Indicar coluna (1-7): ");
+                    string askPeca = Console.ReadLine();
+                    Console.WriteLine("Jogada lida: " + askColuna + " " + askPeca);
+                }
             }
 
             // Fim de jogo
@@ -115,16 +124,6 @@ namespace Simplexity
             Console.ReadKey();
             // Restart
             Start();
-        }
-
-        private void AskPlay()
-        {
-            Console.Write("[!] Indicar coluna (1-7): ");
-            string askColuna = Console.ReadLine();
-            Console.WriteLine();
-            Console.Write("[!] Indicar coluna (1-7): ");
-            string askPeca = Console.ReadLine();
-            Console.WriteLine("Jogada lida: " + askColuna + " " + askPeca);
         }
     }
 }
