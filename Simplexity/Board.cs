@@ -13,9 +13,9 @@ namespace Simplexity
         private State[,] state;
 
 
-        // cria o tamanho do tabuleiro
+
         /// <summary>
-        /// 
+        /// cria o tamanho do tabuleiro
         /// </summary>
         public Board()
         {
