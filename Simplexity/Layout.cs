@@ -6,10 +6,18 @@ using System.Threading.Tasks;
 
 namespace Simplexity
 {
+    /// <summary>
+    /// 
+    /// </summary>
     class Layout
     {
         char[,] simbolos = new char[5, 5];
 
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="board"></param>
         public void Desenha(Board board)
         {
             for(int i = 0; i < 5; i++)
@@ -17,6 +25,11 @@ namespace Simplexity
                     simbolos[i,j] = 
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="state"></param>
+        /// <returns></returns>
         private char Pecas(State state)
         {
             switch (state)
