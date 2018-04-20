@@ -107,15 +107,6 @@ namespace Simplexity
                     Console.WriteLine("[Turno: " + turno + "]");
                     Console.ReadKey();
                 }
-                void AskPlay()
-                {
-                    Console.WriteLine("[!] Indicar coluna (1-7): ");
-                    string askColuna = Console.ReadLine();
-                    Console.WriteLine();
-                    Console.WriteLine("[!] Indicar peça (R / r ou W / w: ");
-                    string askPeca = Console.ReadLine();
-                    Console.WriteLine("Jogada lida: " + askColuna + " " + askPeca);
-                }
             }
 
             // Fim de jogo
@@ -124,6 +115,18 @@ namespace Simplexity
             Console.ReadKey();
             // Restart
             Start();
+        }
+
+        private static void AskPlay()
+        {
+            Console.WriteLine();
+            Console.Write("[!] Indicar coluna (1-7): ");
+            string askColuna = Console.ReadLine();
+            Console.WriteLine();
+            Console.Write("[!] Indicar peça (R / r ou W / w): ");
+            string askPeca = Console.ReadLine();
+            Console.WriteLine();
+            Console.WriteLine("[!] Jogada lida: " + askColuna + " " + askPeca);
         }
     }
 }
