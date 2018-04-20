@@ -8,7 +8,7 @@ namespace Simplexity
 {
     class Player
     {
-        
+
         //Esta classe irá obter o input inserido pelo jogador
         public Position ColumnPosition(Board board)
         {
@@ -39,6 +39,14 @@ namespace Simplexity
                 default:
                     return null;
             }
+        }
+
+        public State Escolhapecas(Board, Board, int jogador)
+        {
+            Console.WriteLine("Escolha entre cubo (1) ou cilindro (2)");
+            int pecaescolhida = Convert.ToInt32(Console.ReadLine());
+            State dafuqdoisayhere = chosen(pecaescolhida);
+            return dafuqdoisayhere;
         }
     }
 
