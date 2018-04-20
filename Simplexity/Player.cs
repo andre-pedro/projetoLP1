@@ -48,8 +48,26 @@ namespace Simplexity
             State playerdecision = chosen(pecaescolhida);
             return playerdecision;
         }
-    }
+        private State setPecas(int pecaescolhida, int jogador)
+            if(jogador = 1) {
+            
+            switch (pecaescolhida)
+            {
+                case 1:
+                    return State.W;
+                case 2:
+                    return State.w;
+            }
 
+            if(jogador = 2) {
+            
+            switch (pecaescolhida)
+            {
+                case 1:
+                    return State.R;
+                case 2:
+                    return State.r;
+            }
 }
 
 }
