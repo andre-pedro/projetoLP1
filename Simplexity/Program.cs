@@ -32,10 +32,10 @@ namespace Simplexity
             string s4 = "Prima [ENTER] para começar...";
 
             // Parametros
-            //cubosBrancos = 11;
-            //cilindrosBrancos = 10;
-            //cubosVermelhos = 11;
-            //cilindrosVermelhos = 10;
+            private int cubosBrancos;
+            private int cilindrosBrancos;
+            private int cubosVermelhos;
+            private int cilindrosVermelhos;
 
             // Start
             Console.ForegroundColor = ConsoleColor.Gray;
