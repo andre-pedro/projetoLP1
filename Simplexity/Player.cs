@@ -103,12 +103,7 @@ namespace Simplexity
                         return State.r;
                 }
             }
-            return NewMethod();
-        }
-
-        private State NewMethod()
-        {
-            return SetPecas;
+            return 0;
         }
     }
 }
