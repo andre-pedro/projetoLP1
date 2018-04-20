@@ -18,16 +18,21 @@ namespace Simplexity
             Layout layout = new Layout();
             Player white = new Player();
             Player red = new Player();
-            int turnos = 10;
+            bool turn = true;
 
 
-            while (turnos != 0)
+            while (turn != false)
             {
                 layout.Desenha(board);
-                
-            }
+                Position next;
 
+                /*se no board for a vez do jogador 1 (white) jogar
+                 * entao usa o comando abaixo, se nao usa o mesmo comando mas 
+                 * troca white por red*/
+               next = white.ColumnPosition(board);
+            }
         }
+         
 
 
 
