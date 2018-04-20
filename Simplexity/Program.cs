@@ -55,7 +55,7 @@ namespace Simplexity
                     Console.WriteLine("[Board_Goes_Here] ");
 
                     /*
-                    //para testar se desenha
+                    // para testar se desenha
                     Layout layout = new Layout();
                     Board board = new Board();
 
@@ -64,6 +64,7 @@ namespace Simplexity
                     */
 
                     Console.WriteLine();
+                    // info jogador 1
                     Console.Write("[Simulated_Jogador 1 - ");
                     Console.ForegroundColor = ConsoleColor.White;
                     Console.Write("Branco");
@@ -73,6 +74,7 @@ namespace Simplexity
                     Console.WriteLine("Simulated_Cubos Brancos: " + cubosBrancos);
                     Console.WriteLine("Simulated_Cilindros Brancos: " + cilindrosBrancos);
                     Console.WriteLine();
+                    // info jogador 2
                     Console.Write("[Simulated_Jogador 2 - ");
                     Console.ForegroundColor = ConsoleColor.Red;
                     Console.Write("Vermelho");
