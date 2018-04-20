@@ -14,19 +14,25 @@ namespace Simplexity
 
 
         // cria o tamanho do tabuleiro
+        /// <summary>
+        /// 
+        /// </summary>
         public Board()
         {
             state = new State[7, 7];
-
         }
 
-        /*
-        //posiçoes
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="position"></param>
+        /// <returns></returns>
         public State GetState(Position position)
         {
             return state[position.Linha, position.Coluna];
         }
-        */
+
+        //public void SetState(Position position, State )
 
 
     }
