@@ -45,29 +45,36 @@ namespace Simplexity
         {
             Console.WriteLine("Escolha entre cubo [1] ou cilindro [2]");
             int pecaescolhida = Convert.ToInt32(Console.ReadLine());
-            State playerdecision = chosen(pecaescolhida);
+            State playerdecision = SetPecas(pecaescolhida, jogador);
             return playerdecision;
         }
-        private State setPecas(int pecaescolhida, int jogador)
-            if(jogador = 1) {
-            
-            switch (pecaescolhida)
-            {
-                case 1:
-                    return State.W;
-                case 2:
-                    return State.w;
-            }
+        private State SetPecas(int pecaescolhida, int jogador)
+        {
 
-            if(jogador = 2) {
-            
-            switch (pecaescolhida)
-            {
-                case 1:
-                    return State.R;
-                case 2:
-                    return State.r;
-            }
-}
 
-}
+            if (jogador == 1)
+            {
+
+                switch (pecaescolhida)
+                {
+                    case 1:
+                        return State.W;
+                    case 2:
+                        return State.w;
+                }
+
+                if (jogador == 2)
+                {
+
+                    switch (pecaescolhida)
+                    {
+                        case 1:
+                            return State.R;
+                        case 2:
+                            return State.r;
+                    }
+                }
+            }
+            return SetPecas;
+        }
+    }
