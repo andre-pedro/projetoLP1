@@ -92,6 +92,12 @@ namespace Simplexity
                         Console.Write("Branco");
                         Console.ForegroundColor = ConsoleColor.Gray;
                         Console.Write("]");
+                        Console.WriteLine();
+                        Console.WriteLine();
+                        // info turnos
+                        Console.ForegroundColor = ConsoleColor.DarkGray;
+                        Console.WriteLine("[Turno: " + turno + "]");
+                        Console.ForegroundColor = ConsoleColor.Gray;
                         AskPlay();
                     }
                     if (vez == 1)
@@ -100,11 +106,14 @@ namespace Simplexity
                         Console.Write("Vermelho");
                         Console.ForegroundColor = ConsoleColor.Gray;
                         Console.Write("]");
+                        Console.WriteLine();
+                        Console.WriteLine();
+                        // info turnos
+                        Console.ForegroundColor = ConsoleColor.DarkGray;
+                        Console.WriteLine("[Turno: " + turno + "]");
+                        Console.ForegroundColor = ConsoleColor.Gray;
                         AskPlay();
                     }
-                    Console.WriteLine();
-                    // info turnos
-                    Console.WriteLine("[Turno: " + turno + "]");
                     Console.ReadKey();
                 }
             }
@@ -119,14 +128,23 @@ namespace Simplexity
 
         private static void AskPlay()
         {
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
             Console.WriteLine();
-            Console.Write("[!] Indicar coluna (1-7): ");
+            Console.Write("[!]");
+            Console.ForegroundColor = ConsoleColor.Gray;
+            Console.Write("Indicar coluna (1-7): ");
             string askColuna = Console.ReadLine();
             Console.WriteLine();
-            Console.Write("[!] Indicar peça (R / r ou W / w): ");
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
+            Console.Write("[!]");
+            Console.ForegroundColor = ConsoleColor.Gray;
+            Console.Write("Indicar peça (R / r ou W / w: ");
             string askPeca = Console.ReadLine();
             Console.WriteLine();
-            Console.WriteLine("[!] Jogada lida: " + askColuna + " " + askPeca);
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
+            Console.Write("[!]");
+            Console.ForegroundColor = ConsoleColor.Gray;
+            Console.Write("Jogada lida: " + askColuna + " " + askPeca);
         }
     }
 }
