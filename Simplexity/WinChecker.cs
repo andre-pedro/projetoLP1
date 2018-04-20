@@ -22,8 +22,5 @@ namespace Simplexity
         // Verificar diagonal [(linha++) e (coluna++)] ou [(linha--) e (coluna--)]
 
         // ####################################################
-
-        for ()
-
     }
 }

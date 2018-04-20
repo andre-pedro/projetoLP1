@@ -80,7 +80,6 @@ namespace Simplexity
         private State SetPecas(int pecaescolhida, int jogador)
         {
 
-
             if (jogador == 1)
             {
 
@@ -91,19 +90,24 @@ namespace Simplexity
                     case 2:
                         return State.w;
                 }
+            }
 
-                if (jogador == 2)
+            if (jogador == 2)
+            {
+
+                switch (pecaescolhida)
                 {
-
-                    switch (pecaescolhida)
-                    {
-                        case 1:
-                            return State.R;
-                        case 2:
-                            return State.r;
-                    }
+                    case 1:
+                        return State.R;
+                    case 2:
+                        return State.r;
                 }
             }
+            return NewMethod();
+        }
+
+        private State NewMethod()
+        {
             return SetPecas;
         }
     }
