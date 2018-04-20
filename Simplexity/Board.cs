@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace Simplexity
 {
+
+    /// <summary>
+    /// 
+    /// </summary>
     class Board
     {
         //var de instancia  da class State que  cria 
