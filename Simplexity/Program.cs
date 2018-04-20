@@ -10,6 +10,8 @@ namespace Simplexity
     {
         static void Main(string[] args)
         {
+
+            //para testar se desenha
             Layout layout = new Layout();
             Board board = new Board();
 

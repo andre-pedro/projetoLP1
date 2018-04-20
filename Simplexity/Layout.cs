@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Simplexity
 {
     /// <summary>
-    /// 
+    /// e a skin do jogo by: Tiago alves
     /// </summary>
     class Layout
     {

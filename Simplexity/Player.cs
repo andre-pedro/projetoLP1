@@ -9,5 +9,7 @@ namespace Simplexity
     class Player
     {
         //Esta classe irá obter o input inserido pelo jogador
+
+       
     }
 }

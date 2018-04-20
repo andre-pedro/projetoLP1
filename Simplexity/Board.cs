@@ -32,7 +32,6 @@ namespace Simplexity
             return state[position.Linha, position.Coluna];
         }
 
-
         /// <summary>
         /// 
         /// </summary>
