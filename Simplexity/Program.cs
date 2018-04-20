@@ -10,8 +10,12 @@ namespace Simplexity
     {
         static void Main(string[] args)
         {
-           
+            Layout layout = new Layout();
+            Board board = new Board();
+
             // another try
+            layout.Desenha(board);
+
 
         }
     }

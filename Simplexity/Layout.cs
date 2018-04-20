@@ -44,7 +44,7 @@ namespace Simplexity
                     return 'W';
                 case State.w:
                     return 'w';
-                case default:
+                default:
                     return '|';
             }
         }
