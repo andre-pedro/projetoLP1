@@ -14,13 +14,6 @@ namespace Simplexity
             // Chama Start()
             Start();
 
-            //para testar se desenha
-            Layout layout = new Layout();
-            Board board = new Board();
-
-            // another try
-            layout.Desenha(board);
-
         }
 
         static private void Start()
@@ -56,6 +49,14 @@ namespace Simplexity
                     Console.ForegroundColor = ConsoleColor.Gray;
                     Console.Clear();
                     Console.WriteLine("[Board_Goes_Here] ");
+
+                    //para testar se desenha
+                    Layout layout = new Layout();
+                    Board board = new Board();
+
+                    // another try
+                    layout.Desenha(board);
+
                     Console.WriteLine();
                     Console.Write("[Simulated_Jogador 1 - ");
                     Console.ForegroundColor = ConsoleColor.White;
