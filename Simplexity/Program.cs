@@ -92,6 +92,7 @@ namespace Simplexity
                 Console.WriteLine("[Turno: " + turno + "]");
                 Console.WriteLine();
             }
+            Console.ReadKey();
         }
     }
 }
