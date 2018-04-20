@@ -68,7 +68,6 @@ namespace Simplexity
                     Console.WriteLine("Simulated_Cubos Brancos: " + cubosBrancos);
                     Console.WriteLine("Simulated_Cilindros Brancos: " + cilindrosBrancos);
                     Console.WriteLine();
-                    Console.WriteLine();
                     Console.Write("[Simulated_Jogador 2 - ");
                     Console.ForegroundColor = ConsoleColor.Red;
                     Console.Write("Vermelho");
