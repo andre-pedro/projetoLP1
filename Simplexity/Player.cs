@@ -6,10 +6,17 @@ using System.Threading.Tasks;
 
 namespace Simplexity
 {
+    /// <summary>
+    /// 
+    /// </summary>
     class Player
     {
 
-        //Esta classe irá obter o input inserido pelo jogador
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="board"></param>
+        /// <returns></returns>
         public Position ColumnPosition(Board board)
         {
             Console.WriteLine("Escolha a coluna onde quer jogar");
@@ -18,6 +25,12 @@ namespace Simplexity
             return coordenada;
         }
 
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="colInput"></param>
+        /// <returns></returns>
         private Position NumberPosition(int colInput)
         {
             switch (colInput)
@@ -41,6 +54,13 @@ namespace Simplexity
             }
         }
 
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="board"></param>
+        /// <param name="jogador"></param>
+        /// <returns></returns>
         public State Escolhapecas(Board board, int jogador)
         {
             Console.WriteLine("Escolha entre cubo [1] ou cilindro [2]");
@@ -48,6 +68,15 @@ namespace Simplexity
             State playerdecision = SetPecas(pecaescolhida, jogador);
             return playerdecision;
         }
+
+
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="pecaescolhida"></param>
+        /// <param name="jogador"></param>
+        /// <returns></returns>
         private State SetPecas(int pecaescolhida, int jogador)
         {
 
