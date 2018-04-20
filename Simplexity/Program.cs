@@ -109,10 +109,10 @@ namespace Simplexity
                 }
                 void AskPlay()
                 {
-                    Console.Write("[!] Indicar coluna (1-7): ");
+                    Console.WriteLine("[!] Indicar coluna (1-7): ");
                     string askColuna = Console.ReadLine();
                     Console.WriteLine();
-                    Console.Write("[!] Indicar coluna (1-7): ");
+                    Console.WriteLine("[!] Indicar peça (R / r ou W / w: ");
                     string askPeca = Console.ReadLine();
                     Console.WriteLine("Jogada lida: " + askColuna + " " + askPeca);
                 }
