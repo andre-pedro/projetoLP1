@@ -33,7 +33,11 @@ namespace Simplexity
         }
 
 
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="position"></param>
+        /// <param name="newState"></param>
         public void SetState(Position position, State newState)
         {
             for (int i = 7; i >= 0; i--)
@@ -44,6 +48,5 @@ namespace Simplexity
                 }
             }
         }
-
     }
 }
