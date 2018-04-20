@@ -45,7 +45,7 @@ namespace Simplexity
             Console.WriteLine(s4.PadLeft(s4.Length + 0));
             Console.ReadKey();
             // Turnos
-            for (int turno = 0; turno <= 1000; turno++)
+            for (int turno = 0; turno <= 10; turno++)
             {
                 for (int vez = 0; vez <= 1; vez++)
                 {
@@ -111,6 +111,13 @@ namespace Simplexity
                     Console.ReadKey();
                 }
             }
+
+            // Fim de jogo
+            Console.Clear();
+            Console.WriteLine();
+            Console.WriteLine("Game Over!");
+            Console.ReadKey();
+
         }
     }
 }
