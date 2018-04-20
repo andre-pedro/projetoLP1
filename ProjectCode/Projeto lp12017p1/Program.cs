@@ -16,7 +16,7 @@ namespace Projeto_lp12017p1
 
         // Var. Turnos
         private static int turno;
-        private static int vez;
+        private static byte vez;
 
         static void Main(string[] args)
         {
@@ -30,6 +30,7 @@ namespace Projeto_lp12017p1
             string s1 = "Projeto de Linguagens de Programação 2017/2018";
             string s2 = "André Pedro, André Santos e Tiago Alves";
             string s3 = "Nuno Fachada";
+            string s4 = "Prima [ENTER] para começar...";
 
             // Parametros
             cubosBrancos = 11;
@@ -45,6 +46,10 @@ namespace Projeto_lp12017p1
             Console.WriteLine();
             Console.WriteLine("Contribuidores: " + s2.PadLeft(s2.Length + 3));
             Console.WriteLine("Docente: " + s3.PadLeft(s3.Length + 10));
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine(s4.PadLeft(s4.Length + 0));
             Console.ReadKey();
 
             // Turnos
