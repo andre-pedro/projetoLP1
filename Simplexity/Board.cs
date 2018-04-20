@@ -32,17 +32,18 @@ namespace Simplexity
             return state[position.Linha, position.Coluna];
         }
 
-        public void SetState(Position position, State )
+
+
+        public void SetState(Position position, State newState)
         {
-            for(int i = 7; i >=0; i--)
+            for (int i = 7; i >= 0; i--)
             {
-                if(state [i, position.Coluna-1] == State.Undecided])
-            {
-                state[i, position.Coluna-1] = 
-            }
+                if (state[i, position.Coluna - 1] == State.Undecided)
+                {
+                    state[i, position.Coluna - 1] = newState;
+                }
             }
         }
-
 
     }
 }
