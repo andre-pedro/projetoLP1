@@ -38,7 +38,7 @@
 ## Referências
  * [referencia 1][ref1]
  
- Curso:
+Curso:
 * [Licenciatura em Aplicações Multimédia e Videojogos][lamv]
 	
 Instituição: 
