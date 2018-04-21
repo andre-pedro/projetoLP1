@@ -1,10 +1,7 @@
 # Relatório Projecto LP1
 
 
-## Conclusão
 
-## Repositório do Projeto
- * O repositório do projeto está disponível através do seguinte [link][rp].
 
 ## Metadados
 
@@ -12,8 +9,26 @@
  * [André Santos][AS], nº a21700034
  * [André Pedro][AP], nº a21701115
  * [Tiago Alves][TA], nº a21701031
+ 
+## Repositório do Projeto
+ * O repositório do projeto está disponível através do seguinte [link][rp].
 
-Curso:
+## Repartição de Tarefas
+
+ * André Santos
+	* Item 1
+	* Item 2
+ * André Pedro
+	* Item 1
+	* Item 2
+ * Tiago Alves
+	* Item 1
+	* Item 2
+
+
+## Conclusão
+ 
+ Curso:
 * [Licenciatura em Aplicações Multimédia e Videojogos][lamv]
 	
 Instituição: 

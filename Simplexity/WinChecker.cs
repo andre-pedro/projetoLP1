@@ -8,19 +8,25 @@ namespace Simplexity
 {
     class WinChecker
     {
-        //Verifica se algum jogador venceu
+        public bool Wincheck(int[,] array, int n)
+        {
+            bool teste;
+            teste = false;
+            int count;
+            int diagonal;
 
-        // ####################################################
-
-        // Requisitos:
-        // linha
-        // coluna
-        // posição(linha, coluna)(x, y)
-
-        // Verificar linha (linha++)
-        // Verificar coluna (if (linha < 7) { coluna++; linha = 1 }
-        // Verificar diagonal [(linha++) e (coluna++)] ou [(linha--) e (coluna--)]
-
-        // ####################################################
+            for (int i=0; i<array.GetLength(0);i++)
+            {
+                if (teste == true) break;
+                for(int j=0; j<array.GetLength(1);j++)
+                {
+                    if (teste == true)
+                        break;
+                    
+                }
+                count = 0;
+            }
+            return true;
+        }
     }
 }
