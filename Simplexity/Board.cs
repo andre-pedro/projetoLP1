@@ -16,8 +16,6 @@ namespace Simplexity
         //um array
         private State[,] state;
         public Player NextTurn { get; private set; }
-        Player jogador1 = new Player();
-        Player jogador2 = new Player();
 
 
 
@@ -27,7 +25,6 @@ namespace Simplexity
         public Board()
         {
             state = new State[7, 7];
-            NextTurn = jogador1;
         }
 
         /// <summary>
@@ -58,17 +55,6 @@ namespace Simplexity
                 {
                     state[i, position.Coluna - 1] = newState;
                 }
-            }
-            ChangeTurns();
-        }
-
-        public void ChangeTurns()
-        {
-            if (NextTurn == jogador1)
-            {
-                Player NexTurn = jogador1;
-            } else {
-                NextTurn = jogador2;
             }
         }
     }

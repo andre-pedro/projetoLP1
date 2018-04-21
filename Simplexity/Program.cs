@@ -10,10 +10,6 @@ namespace Simplexity
     {
         static void Main(string[] args)
         {
-
-            // Chama Start()
-            //Start();
-
             Board board = new Board();
             Layout layout = new Layout();
             Player white = new Player();
@@ -27,39 +23,13 @@ namespace Simplexity
             {
                 layout.Render(board);
                 Position next;
-
-                //    if (board.NextTurn == jogador1)
-                //       {
-                jogador = 2;
+                jogador = 1;
                 Console.Write("Player White ");
                 next = white.ColumnPosition(board);
                 tryy = white.Escolhapecas(board, jogador);
                 board.SetState(next, tryy);
-                //      turn++;
             }
-
-            /* else
-             {
-                 jogador = 2;
-                 Console.Write("Player Red ");
-                 next = red.ColumnPosition(board);
-                 state = Escolhapecas(board, jogador);
-                 board.SetState(next, tryy);
-             }
-
-             layout.Render(board);
-             Console.ReadKey();
-             turn++;*/
-            //}
         }
-
-
-        /* TIAGOOO EU COMENTEI O TEU CODIGO PARA TESTAR ISTO EM CIMA
-         * 
-         se por acaso esqueci.me de descomentar algo toma atencao podes 
-         comentar o codigo em cima visto que ainda nao fucniona a 100%
-         baseado no jogo tic toe*/
-
 
         /*
         static private void Start()
