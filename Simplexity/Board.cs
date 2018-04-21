@@ -15,6 +15,9 @@ namespace Simplexity
         //var de instancia  da class State que  cria 
         //um array
         private State[,] state;
+        public Player NextTurn { get; private set; }
+        Player white = new Player();
+        Player red = new Player();
 
 
 
@@ -24,6 +27,7 @@ namespace Simplexity
         public Board()
         {
             state = new State[7, 7];
+            NextTurn = white;
         }
 
         /// <summary>
@@ -49,6 +53,17 @@ namespace Simplexity
                 {
                     state[i, position.Coluna - 1] = newState;
                 }
+            }
+            ChangeTurns();
+        }
+
+        private void ChangeTurns()
+        {
+            if (Board NexTurn == white)
+            {
+                Player NexTurn = white;
+            } else {
+                NextTurn = red;
             }
         }
     }
