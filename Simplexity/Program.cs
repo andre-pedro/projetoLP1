@@ -23,12 +23,12 @@ namespace Simplexity
             int turn = 0;
 
 
-            while (turn < 20)
+            while (turn < 5)
             {
                 layout.Render(board);
                 Position next;
 
-                if (board.NextTurn == jogador1)
+               if (board.NextTurn == jogador1)
                    next = white.GetPosition(board);
                 else
                    next = red.GetPosition(board);

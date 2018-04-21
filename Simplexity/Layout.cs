@@ -20,9 +20,9 @@ namespace Simplexity
         /// <param name="board"></param>
         public void Render(Board board)
         {
-            for (int i = 0; i < 7; i++)
-                for (int j = 0; i < 7; j++)
-                    simbolos[i, j] = Pecas(board.GetState(new Position(i,j)));
+            for (int row = 0; row < 7; row++)
+                for (int column = 0; column < 7; column++)
+                    simbolos[row, column] = Pecas(board.GetState(new Position(row, column)));
 
             Console.WriteLine($"{simbolos[0, 0]}");
         }
