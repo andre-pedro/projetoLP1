@@ -47,11 +47,15 @@ namespace Simplexity
         /// <param name="newState"></param>
         public void SetState(Position position, State newState)
         {
-            for (int i = 6; i >= 0; i--)
+            int i;
+            for (i = 6; i >= 0; i--)
             {
                 if (state[i, position.Coluna - 1] == State.Undecided)
                 {
-                    state[i, position.Coluna - 1] = newState;
+                    if (i == 6)
+                    {
+                        state[i, position.Coluna - 1] = newState;
+                    }
                 }
                 else if(state[i, position.Coluna - 1] != State.Undecided)
                 {
