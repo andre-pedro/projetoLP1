@@ -59,7 +59,7 @@ namespace Simplexity
 
         private void ChangeTurns()
         {
-            if (Board NexTurn == white)
+            if (NextTurn == white)
             {
                 Player NexTurn = white;
             } else {
