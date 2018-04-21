@@ -25,11 +25,6 @@ namespace Simplexity
             return coordenada;
         }
 
-        internal Position GetPosition(Board board)
-        {
-            throw new NotImplementedException();
-        }
-
 
         /// <summary>
         /// 
