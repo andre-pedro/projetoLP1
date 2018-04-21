@@ -22,6 +22,7 @@ namespace Simplexity
             Player red = new Player();
             State tryy = new State();
             int turn = 0;
+            int jogador = 1;
 
 
             while (turn < 5)
@@ -34,7 +35,7 @@ namespace Simplexity
                 {
 
                     next = white.ColumnPosition(board);
-                    tryy = Player.Escolhapecas(board, ChoosePlayer.white);
+                    tryy = white.Escolhapecas(board, jogador);
                 }
 
                 else

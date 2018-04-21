@@ -61,7 +61,7 @@ namespace Simplexity
         /// <param name="board"></param>
         /// <param name="jogador"></param>
         /// <returns></returns>
-        public State Escolhapecas(Board board, string jogador)
+        public State Escolhapecas(Board board, int jogador)
         {
             Console.WriteLine("Escolha entre cubo [1] ou cilindro [2]");
             int pecaescolhida = Convert.ToInt32(Console.ReadLine());
@@ -76,10 +76,10 @@ namespace Simplexity
         /// <param name="pecaescolhida"></param>
         /// <param name="jogador"></param>
         /// <returns></returns>
-        private State SetPecas(int pecaescolhida,ChoosePlayer jogador)
+        private State SetPecas(int pecaescolhida,int jogador)
         {
 
-            if (jogador == ChoosePlayer.white)
+            if (jogador == 1)
             {
 
                 switch (pecaescolhida)
@@ -91,7 +91,7 @@ namespace Simplexity
                 }
             }
 
-            if (jogador == ChoosePlayer.red)
+            if (jogador == 2)
             {
 
                 switch (pecaescolhida)
