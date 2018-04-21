@@ -21,16 +21,6 @@ namespace Simplexity
         {
             Console.Write(" escolha a coluna onde quer jogar: ");
             int colInput = Convert.ToInt32(Console.ReadLine());
-            while ((colInput != 1) || (colInput != 2) || (colInput != 3) || (colInput != 4) || 
-                (colInput != 5) || (colInput != 6) || (colInput != 7))
-            {
-                Console.ForegroundColor = ConsoleColor.Red;
-                Console.Write("[!] ");
-                Console.ForegroundColor = ConsoleColor.White;
-                Console.Write("Jogada inválida!");
-                Console.WriteLine();
-                break;
-            }
             Position coordenada = NumberPosition(colInput);
             return coordenada;
         }
