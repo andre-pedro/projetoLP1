@@ -27,17 +27,30 @@ namespace Simplexity
             {
                 layout.Render(board);
                 Position next;
+                State peca;
 
-               if (board.NextTurn == jogador1)
-                   next = white.ColumnPosition(board);
-                else
-                   next = red.ColumnPosition(board);
+                if (board.NextTurn == jogador1)
+                {
+
+                next = white.ColumnPosition(board);
+           //     peca = Escolhapecas(board, 1);
             }
+
+                else
+                    next = red.ColumnPosition(board);
+         //   peca = Escolhapecas(board, 2);
+             }
             layout.Render(board);
             Console.ReadKey();
             turn++;
+
         }
-         
+
+        private static State Escolhapecas(Board board, int v)
+        {
+            throw new NotImplementedException();
+        }
+
 
 
         /* TIAGOOO EU COMENTEI O TEU CODIGO PARA TESTAR ISTO EM CIMA
@@ -81,102 +94,102 @@ namespace Simplexity
                     /*
                     [SetPecas goes here?]
                     */
-                    
-                   /* Console.ForegroundColor = ConsoleColor.Gray;
-                    Console.Clear();
-                    Console.WriteLine("[Board_Goes_Here] ");
 
-                    /*
-                    // para testar se desenha
-                    Layout layout = new Layout();
-                    Board board = new Board();
+        /* Console.ForegroundColor = ConsoleColor.Gray;
+         Console.Clear();
+         Console.WriteLine("[Board_Goes_Here] ");
 
-                    // another try
-                    layout.Desenha(board);
-                    */
+         /*
+         // para testar se desenha
+         Layout layout = new Layout();
+         Board board = new Board();
 
-                /*    Console.WriteLine();
-                    // info jogador 1
-                    Console.Write("[Simulated_Jogador 1 - ");
-                    Console.ForegroundColor = ConsoleColor.White;
-                    Console.Write("Branco");
-                    Console.ForegroundColor = ConsoleColor.Gray;
-                    Console.Write("]");
-                    Console.WriteLine();
-                    Console.WriteLine("Simulated_Cubos Brancos: " + cubosBrancos);
-                    Console.WriteLine("Simulated_Cilindros Brancos: " + cilindrosBrancos);
-                    Console.WriteLine();
-                    // info jogador 2
-                    Console.Write("[Simulated_Jogador 2 - ");
-                    Console.ForegroundColor = ConsoleColor.Red;
-                    Console.Write("Vermelho");
-                    Console.ForegroundColor = ConsoleColor.Gray;
-                    Console.Write("]");
-                    Console.WriteLine();
-                    Console.WriteLine("Simulated_Cubos Vermelhos: " + cubosVermelhos);
-                    Console.WriteLine("Simulated_Cilindros Vermelhos: " + cilindrosVermelhos);
-                    Console.WriteLine();
-                    // info vez do jogador 1 || 2
-                    Console.Write("[Vez do Jogador: ");
-                    if (vez == 0)
-                    {
-                        Console.ForegroundColor = ConsoleColor.White;
-                        Console.Write("Branco");
-                        Console.ForegroundColor = ConsoleColor.Gray;
-                        Console.Write("]");
-                        Console.WriteLine();
-                        Console.WriteLine();
-                        // info turnos
-                        Console.ForegroundColor = ConsoleColor.DarkGray;
-                        Console.WriteLine("[Turno: " + turno + "]");
-                        Console.ForegroundColor = ConsoleColor.Gray;
-                        AskPlay();
-                    }
-                    if (vez == 1)
-                    {
-                        Console.ForegroundColor = ConsoleColor.Red;
-                        Console.Write("Vermelho");
-                        Console.ForegroundColor = ConsoleColor.Gray;
-                        Console.Write("]");
-                        Console.WriteLine();
-                        Console.WriteLine();
-                        // info turnos
-                        Console.ForegroundColor = ConsoleColor.DarkGray;
-                        Console.WriteLine("[Turno: " + turno + "]");
-                        Console.ForegroundColor = ConsoleColor.Gray;
-                        AskPlay();
-                    }
-                    Console.ReadKey();
-                }
+         // another try
+         layout.Desenha(board);
+         */
+
+        /*    Console.WriteLine();
+            // info jogador 1
+            Console.Write("[Simulated_Jogador 1 - ");
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.Write("Branco");
+            Console.ForegroundColor = ConsoleColor.Gray;
+            Console.Write("]");
+            Console.WriteLine();
+            Console.WriteLine("Simulated_Cubos Brancos: " + cubosBrancos);
+            Console.WriteLine("Simulated_Cilindros Brancos: " + cilindrosBrancos);
+            Console.WriteLine();
+            // info jogador 2
+            Console.Write("[Simulated_Jogador 2 - ");
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.Write("Vermelho");
+            Console.ForegroundColor = ConsoleColor.Gray;
+            Console.Write("]");
+            Console.WriteLine();
+            Console.WriteLine("Simulated_Cubos Vermelhos: " + cubosVermelhos);
+            Console.WriteLine("Simulated_Cilindros Vermelhos: " + cilindrosVermelhos);
+            Console.WriteLine();
+            // info vez do jogador 1 || 2
+            Console.Write("[Vez do Jogador: ");
+            if (vez == 0)
+            {
+                Console.ForegroundColor = ConsoleColor.White;
+                Console.Write("Branco");
+                Console.ForegroundColor = ConsoleColor.Gray;
+                Console.Write("]");
+                Console.WriteLine();
+                Console.WriteLine();
+                // info turnos
+                Console.ForegroundColor = ConsoleColor.DarkGray;
+                Console.WriteLine("[Turno: " + turno + "]");
+                Console.ForegroundColor = ConsoleColor.Gray;
+                AskPlay();
             }
-
-            // Fim de jogo
-            Console.Clear();
-            Console.WriteLine("Game Over!");
+            if (vez == 1)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.Write("Vermelho");
+                Console.ForegroundColor = ConsoleColor.Gray;
+                Console.Write("]");
+                Console.WriteLine();
+                Console.WriteLine();
+                // info turnos
+                Console.ForegroundColor = ConsoleColor.DarkGray;
+                Console.WriteLine("[Turno: " + turno + "]");
+                Console.ForegroundColor = ConsoleColor.Gray;
+                AskPlay();
+            }
             Console.ReadKey();
-            // Restart
-            Start();
         }
+    }
 
-        private static void AskPlay()
-        {
-            Console.ForegroundColor = ConsoleColor.DarkYellow;
-            Console.WriteLine();
-            Console.Write("[!]");
-            Console.ForegroundColor = ConsoleColor.Gray;
-            Console.Write("Indicar coluna (1-7): ");
-            string askColuna = Console.ReadLine();
-            Console.WriteLine();
-            Console.ForegroundColor = ConsoleColor.DarkYellow;
-            Console.Write("[!]");
-            Console.ForegroundColor = ConsoleColor.Gray;
-            Console.Write("Indicar peça (R / r ou W / w: ");
-            string askPeca = Console.ReadLine();
-            Console.WriteLine();
-            Console.ForegroundColor = ConsoleColor.DarkYellow;
-            Console.Write("[!]");
-            Console.ForegroundColor = ConsoleColor.Gray;
-            Console.Write("Jogada lida: " + askColuna + " " + askPeca);
-        }*/
+    // Fim de jogo
+    Console.Clear();
+    Console.WriteLine("Game Over!");
+    Console.ReadKey();
+    // Restart
+    Start();
+}
+
+private static void AskPlay()
+{
+    Console.ForegroundColor = ConsoleColor.DarkYellow;
+    Console.WriteLine();
+    Console.Write("[!]");
+    Console.ForegroundColor = ConsoleColor.Gray;
+    Console.Write("Indicar coluna (1-7): ");
+    string askColuna = Console.ReadLine();
+    Console.WriteLine();
+    Console.ForegroundColor = ConsoleColor.DarkYellow;
+    Console.Write("[!]");
+    Console.ForegroundColor = ConsoleColor.Gray;
+    Console.Write("Indicar peça (R / r ou W / w: ");
+    string askPeca = Console.ReadLine();
+    Console.WriteLine();
+    Console.ForegroundColor = ConsoleColor.DarkYellow;
+    Console.Write("[!]");
+    Console.ForegroundColor = ConsoleColor.Gray;
+    Console.Write("Jogada lida: " + askColuna + " " + askPeca);
+}*/
     }
 }
