@@ -3,8 +3,6 @@
 
 ## Conclusão
 
-## Repositório do Projeto
- * O repositório do projeto está disponível através do seguinte [link][rp].
 
 ## Metadados
 
@@ -12,6 +10,9 @@
  * [André Santos][AS], nº a21700034
  * [André Pedro][AP], nº a21701115
  * [Tiago Alves][TA], nº a21701031
+ 
+ ## Repositório do Projeto
+ * O repositório do projeto está disponível através do seguinte [link][rp].
 
 Curso:
 * [Licenciatura em Aplicações Multimédia e Videojogos][lamv]
