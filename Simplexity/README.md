@@ -13,6 +13,9 @@
 ## Repositório do Projeto
  * O repositório do projeto está disponível através do seguinte [link][rp].
 
+## Repartição de Tarefas
+
+
 ## Conclusão
  
  Curso:
