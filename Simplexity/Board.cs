@@ -59,7 +59,7 @@ namespace Simplexity
                 }
                 else if(state[i, position.Coluna - 1] != State.Undecided)
                 {
-                    state[i, position.Coluna - 1] = State.Undecided;
+                    Console.WriteLine("Jogada Inválida!");
                 }
             }
             ChangeTurns();
@@ -69,7 +69,7 @@ namespace Simplexity
         {
             if (NextTurn == jogador1)
             {
-                Player NexTurn = jogador1;
+                Player NextTurn = jogador1;
             } else {
                 NextTurn = jogador2;
             }
