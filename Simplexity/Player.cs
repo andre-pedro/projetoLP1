@@ -65,7 +65,7 @@ namespace Simplexity
         {
             Console.WriteLine("Escolha entre cubo [1] ou cilindro [2]");
             int pecaescolhida = Convert.ToInt32(Console.ReadLine());
-            State playerdecision = SetPecas(pecaescolhida, ChoosePlayer.none);
+            State playerdecision = SetPecas(pecaescolhida, jogador);
             return playerdecision;
         }
 
