@@ -20,6 +20,7 @@ namespace Simplexity
             Layout layout = new Layout();
             Player white = new Player();
             Player red = new Player();
+            State state = new State();
             int turn = 0;
 
 
@@ -27,19 +28,18 @@ namespace Simplexity
             {
                 layout.Render(board);
                 Position next;
-                State peca;
 
                 if (board.NextTurn == jogador1)
                 {
 
-                next = white.ColumnPosition(board);
-           //     peca = Escolhapecas(board, 1);
-            }
+                    next = white.ColumnPosition(board);
+                    state = Escolhapecas(board, 1);
+                }
 
                 else
                     next = red.ColumnPosition(board);
-         //   peca = Escolhapecas(board, 2);
-             }
+                state = Escolhapecas(board, 2);
+            }
             layout.Render(board);
             Console.ReadKey();
             turn++;
