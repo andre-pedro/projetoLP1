@@ -53,6 +53,10 @@ namespace Simplexity
                 {
                     state[i, position.Coluna - 1] = newState;
                 }
+                else if(state[i, position.Coluna - 1] != State.Undecided)
+                {
+                    state[i, position.Coluna - 1] = State.Undecided;
+                }
             }
             ChangeTurns();
         }
