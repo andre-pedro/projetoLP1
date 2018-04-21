@@ -19,7 +19,11 @@ namespace Simplexity
         /// <returns>a coordenada em que o jogador quer jogar </returns>
         public Position ColumnPosition(Board board)
         {
-            Console.WriteLine("Escolha a coluna onde quer jogar");
+            Console.WriteLine();
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.Write("[!]");
+            Console.ForegroundColor = ConsoleColor.Gray;
+            Console.Write(" Escolha a coluna onde quer jogar:");
             int colInput = Convert.ToInt32(Console.ReadLine());
             Position coordenada = NumberPosition(colInput);
             return coordenada;
