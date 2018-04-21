@@ -11,7 +11,7 @@
  * [André Pedro][AP], nº a21701115
  * [Tiago Alves][TA], nº a21701031
  
- ## Repositório do Projeto
+## Repositório do Projeto
  * O repositório do projeto está disponível através do seguinte [link][rp].
 
 Curso:
