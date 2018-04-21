@@ -13,7 +13,6 @@ namespace Simplexity
     {
         char[,] simbolos = new char[7, 7];
 
-
         /// <summary>
         /// Este método desenha as linhas e colunas.
         /// </summary>
