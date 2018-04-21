@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Simplexity
 {
     /// <summary>
-    /// e a skin do jogo by: Tiago alves
+    /// Composta por 2 métodos, a classe Layout é responsável por desenhar as peças e tudo o que é proveniente da classe Board. 
     /// </summary>
     class Layout
     {
@@ -15,7 +15,7 @@ namespace Simplexity
 
 
         /// <summary>
-        /// 
+        /// Este método desenha as linhas e colunas.
         /// </summary>
         /// <param name="board"></param>
         public void Render(Board board)
@@ -34,10 +34,10 @@ namespace Simplexity
         }
 
         /// <summary>
-        /// 
+        /// Este método desenha as peças, mediante o input do jogador
         /// </summary>
         /// <param name="state"></param>
-        /// <returns></returns>
+        /// <returns>Retorna a peça que o jogador escolheu</returns>
         private char Pecas(State state)
         {
             switch (state)
