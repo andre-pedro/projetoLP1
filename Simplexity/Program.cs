@@ -29,9 +29,9 @@ namespace Simplexity
                 Position next;
 
                if (board.NextTurn == jogador1)
-                   next = white.GetPosition(board);
+                   next = white.ColumnPosition(board);
                 else
-                   next = red.GetPosition(board);
+                   next = red.ColumnPosition(board);
             }
             layout.Render(board);
             Console.ReadKey();
