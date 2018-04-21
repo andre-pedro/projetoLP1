@@ -51,9 +51,9 @@ namespace Simplexity
                     state[i, position.Coluna - 1] = newState;
                     break;
                 }
-                else if (state[i - 1, position.Coluna] != State.Undecided)
+                else if (state[i - 1, position.Coluna-1] != State.Undecided)
                 {
-                    state[i, position.Coluna - 1] = newState;
+                    state[i, position.Coluna - 1] = state[i, position.Coluna - 1];
                 }
             }
         }
