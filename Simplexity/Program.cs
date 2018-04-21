@@ -24,7 +24,7 @@ namespace Simplexity
             Console.WriteLine("Contribuidores: " + s2.PadLeft(s2.Length + 3));
             Console.WriteLine("Docente: " + s3.PadLeft(s3.Length + 10));
             Console.WriteLine();
-            Console.WriteLine(s4.PadLeft(s4.Length + 0));
+            Console.Write(s4.PadLeft(s4.Length + 0));
             Console.ReadKey();
 
             Board board = new Board();
