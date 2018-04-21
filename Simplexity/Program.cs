@@ -46,13 +46,6 @@ namespace Simplexity
 
         }
 
-        private static State Escolhapecas(Board board, int v)
-        {
-            throw new NotImplementedException();
-        }
-
-
-
         /* TIAGOOO EU COMENTEI O TEU CODIGO PARA TESTAR ISTO EM CIMA
          * 
          se por acaso esqueci.me de descomentar algo toma atencao podes 
