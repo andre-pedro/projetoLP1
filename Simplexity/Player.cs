@@ -19,11 +19,7 @@ namespace Simplexity
         /// <returns>a coordenada em que o jogador quer jogar </returns>
         public Position ColumnPosition(Board board)
         {
-            Console.WriteLine();
-            Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.Write("[!]");
-            Console.ForegroundColor = ConsoleColor.Gray;
-            Console.Write(" Escolha a coluna onde quer jogar:");
+            Console.Write(" escolha a coluna onde quer jogar: ");
             int colInput = Convert.ToInt32(Console.ReadLine());
             Position coordenada = NumberPosition(colInput);
             return coordenada;
@@ -67,7 +63,7 @@ namespace Simplexity
         /// <returns></returns>
         public State Escolhapecas(Board board, int jogador)
         {
-            Console.WriteLine("Escolha entre cubo [1] ou cilindro [2]");
+            Console.Write(" escolha entre Cubo [1] ou Cilindro [2]: ");
             int pecaescolhida = Convert.ToInt32(Console.ReadLine());
             State playerdecision = SetPecas(pecaescolhida, jogador);
             return playerdecision;

@@ -35,7 +35,7 @@ namespace Simplexity
             int jogador;
 
             // Turnos
-            for (int turno = 0; turno <= 10; turno++)
+            for (int turno = 0; turno <= 1000; turno++)
             {
                 for (int vez = 0; vez <= 1; vez++)
                 {
@@ -65,21 +65,31 @@ namespace Simplexity
                     Console.WriteLine("Cubos Vermelhos: ");
                     Console.WriteLine("Cilindros Vermelhos: ");
                     Console.WriteLine();
+                    // info turnos
+                    Console.WriteLine("Turno: " + turno);
+                    Console.WriteLine();
                     // info vez do jogador 1 || 2
-                    Console.Write("Vez do Jogador: ");
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                    Console.Write("[!] ");
+                    Console.ForegroundColor = ConsoleColor.Gray;
+                    Console.Write("Jogador ");
                     if (vez == 0)
                     {
                         Console.ForegroundColor = ConsoleColor.White;
                         Console.Write("Branco");
                         Console.ForegroundColor = ConsoleColor.Gray;
-                        Console.WriteLine();
-                        Console.WriteLine();
-                        // info turnos
-                        Console.WriteLine("Turno: " + turno);
                         // play
                         Position next;
                         jogador = 1;
                         next = white.ColumnPosition(board);
+                        // info vez do jogador 1 || 2
+                        Console.ForegroundColor = ConsoleColor.Yellow;
+                        Console.Write("[!] ");
+                        Console.ForegroundColor = ConsoleColor.Gray;
+                        Console.Write("Jogador ");
+                        Console.ForegroundColor = ConsoleColor.White;
+                        Console.Write("Branco");
+                        Console.ForegroundColor = ConsoleColor.Gray;
                         estado = white.Escolhapecas(board, jogador);
                         board.SetState(next, estado);
                     }
@@ -88,15 +98,18 @@ namespace Simplexity
                         Console.ForegroundColor = ConsoleColor.Red;
                         Console.Write("Vermelho");
                         Console.ForegroundColor = ConsoleColor.Gray;
- 
-                        Console.WriteLine();
-                        Console.WriteLine();
-                        // info turnos
-                        Console.WriteLine("Turno: " + turno);
                         // play
                         Position next;
                         jogador = 2;
                         next = red.ColumnPosition(board);
+                        // info vez do jogador 1 || 2
+                        Console.ForegroundColor = ConsoleColor.Yellow;
+                        Console.Write("[!] ");
+                        Console.ForegroundColor = ConsoleColor.Gray;
+                        Console.Write("Jogador ");
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.Write("Vermelho");
+                        Console.ForegroundColor = ConsoleColor.Gray;
                         estado = red.Escolhapecas(board, jogador);
                         board.SetState(next, estado);
                     }
