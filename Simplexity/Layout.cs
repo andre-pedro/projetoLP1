@@ -18,7 +18,7 @@ namespace Simplexity
         /// 
         /// </summary>
         /// <param name="board"></param>
-        public void Desenha(Board board)
+        public void Render(Board board)
         {
             for (int i = 0; i < 7; i++)
                 for (int j = 0; i < 7; j++)
