@@ -21,35 +21,36 @@ namespace Simplexity
             Player white = new Player();
             Player red = new Player();
             State tryy = new State();
-            int turn = 0;
+           // int turn = 0;
             int jogador = 1;
 
 
-            while (turn < 5)
-            {
-                layout.Render(board);
+          //  while (turn < 5)
+           // {
+              //  layout.Render(board);
                 Position next;
 
-                if (board.NextTurn == jogador1)
-                {
+            //    if (board.NextTurn == jogador1)
+         //       {
                     jogador = 1;
+                    Console.Write("Player White");
                     next = white.ColumnPosition(board);
                     tryy = white.Escolhapecas(board, jogador);
                     board.SetState(next, tryy);
-                    turn++;
-                }
+              //      turn++;
+            //    }
 
-                else
+               /* else
                 {
                     jogador = 2;
                     next = red.ColumnPosition(board);
                     // state = Escolhapecas(board, 2);
                 }
-
+                
                 layout.Render(board);
                 Console.ReadKey();
-                turn++;
-            }
+                turn++;*/
+            //}
         }
     
 
