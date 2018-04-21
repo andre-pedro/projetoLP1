@@ -1,7 +1,6 @@
 # Relatório Projecto LP1
 
 
-## Conclusão
 
 
 ## Metadados
@@ -14,7 +13,9 @@
 ## Repositório do Projeto
  * O repositório do projeto está disponível através do seguinte [link][rp].
 
-Curso:
+## Conclusão
+ 
+ Curso:
 * [Licenciatura em Aplicações Multimédia e Videojogos][lamv]
 	
 Instituição: 
