@@ -47,19 +47,16 @@ namespace Simplexity
         /// <param name="newState"></param>
         public void SetState(Position position, State newState)
         {
-            int i;
-            for (i = 6; i >= 0; i--)
+            for (int i = 6; i >= 0; i--)
             {
                 if (state[i, position.Coluna - 1] == State.Undecided)
                 {
-                    if (i == 6)
-                    {
-                        state[i, position.Coluna - 1] = newState;
-                    }
+                    state[i, position.Coluna - 1] = newState;
+                    break;
                 }
-                else if(state[i, position.Coluna - 1] != State.Undecided)
+                else if (state[i, position.Coluna] != State.Undecided)
                 {
-                    Console.WriteLine("Jogada Inválida!");
+                    state[i, position.Coluna - 1] = newState;
                 }
             }
             ChangeTurns();
@@ -69,7 +66,7 @@ namespace Simplexity
         {
             if (NextTurn == jogador1)
             {
-                Player NextTurn = jogador1;
+                Player NexTurn = jogador1;
             } else {
                 NextTurn = jogador2;
             }
