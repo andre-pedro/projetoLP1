@@ -11,4 +11,8 @@
 
     public enum State { Undecided, R, r, W, w };
 
+
+    //trying
+    public enum ChoosePlayer {none, white, red }
+
 }

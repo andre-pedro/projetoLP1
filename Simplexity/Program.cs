@@ -33,12 +33,12 @@ namespace Simplexity
                 {
 
                     next = white.ColumnPosition(board);
-                    state = Escolhapecas(board, 1);
+                    state = Escolhapecas(board, ChoosePlayer.white);
                 }
 
                 else
                     next = red.ColumnPosition(board);
-                state = Escolhapecas(board, 2);
+                    state = Escolhapecas(board, 2);
             }
             layout.Render(board);
             Console.ReadKey();
