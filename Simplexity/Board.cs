@@ -57,7 +57,7 @@ namespace Simplexity
             ChangeTurns();
         }
 
-        private void ChangeTurns()
+        public void ChangeTurns()
         {
             if (NextTurn == jogador1)
             {
