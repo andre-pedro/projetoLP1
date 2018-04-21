@@ -15,6 +15,16 @@
 
 ## Repartição de Tarefas
 
+ * André Santos
+	* Item 1
+	* Item 2
+ * André Pedro
+	* Item 1
+	* Item 2
+ * Tiago Alves
+	* Item 1
+	* Item 2
+
 
 ## Conclusão
  
