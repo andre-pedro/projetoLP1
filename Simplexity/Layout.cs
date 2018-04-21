@@ -43,14 +43,19 @@ namespace Simplexity
             switch (state)
             {
                 case State.R:
+                    Console.ForegroundColor = ConsoleColor.Red;
                     return 'R';
                 case State.r:
+                    Console.ForegroundColor = ConsoleColor.Red;
                     return 'r';
                 case State.W:
+                    Console.ForegroundColor = ConsoleColor.White;
                     return 'W';
                 case State.w:
+                    Console.ForegroundColor = ConsoleColor.White;
                     return 'w';
                 default:
+                    Console.ForegroundColor = ConsoleColor.Gray;
                     return '|';
             }
         }

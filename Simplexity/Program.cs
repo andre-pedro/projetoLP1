@@ -30,7 +30,7 @@ namespace Simplexity
 
                 //    if (board.NextTurn == jogador1)
                 //       {
-                jogador = 1;
+                jogador = 2;
                 Console.Write("Player White ");
                 next = white.ColumnPosition(board);
                 tryy = white.Escolhapecas(board, jogador);
