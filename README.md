@@ -29,7 +29,13 @@
 ## Descrição da Solução
 
  * Arquitetura da Solução:
-	* succ1
+	* De forma a simplificar a interpretação do nosso programa, separamos o código em diversas classes.
+		* A classe `Program` é responsável por inicializar o programa;
+		* É na classe `Board` `Layout` `Player` `Position` `State` `WinChecker`
+		
+	em várias classes breve explicação de como o programa foi organizado e indicação das estruturas de dados
+	(para o tabuleiro de jogo, por exemplo) e algoritmos (para verificação da situação de vitória, por exemplo)
+	utilizados.
 	* succ2
  * Fluxograma:
 
@@ -42,7 +48,7 @@
 ## Referências
  * [Enunciado do Projeto][ref1]
  * Capítulo 20 do Livro "[The C# Player's Guide (3rd Edition)][ref2]"
- * [Exercicio nº 8][ref3] do repositório [@VideojogosLusofona][ref4], em [Programação Orientada a Objetos][ref5]
+ * [Solução do Exercicio nº 8][ref3] do repositório [@VideojogosLusofona][ref4], em [Programação Orientada a Objetos][ref5]
  
 Curso:
 * [Licenciatura em Aplicações Multimédia e Videojogos][lamv]

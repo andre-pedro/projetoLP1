@@ -38,9 +38,9 @@ namespace Simplexity
         }
 
         /// <summary>
-        /// Este metódo é responsavél pera a verificação
-        /// da coluna, ou seja aonde a peça que o jogador escolheu
-        /// irá ser inserida na coluna em questção.
+        /// Este metódo é responsável para a verificação
+        /// da coluna, ou seja, onde a peça que o jogador escolheu
+        /// irá ser inserida na coluna em questão.
         /// </summary>
         /// <param name="position">Coluna que jogador escolheu</param>
         /// <param name="newState">Peça que jogador escolheu</param>
