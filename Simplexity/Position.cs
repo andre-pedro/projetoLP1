@@ -7,10 +7,8 @@ using System.Threading.Tasks;
 namespace Simplexity
 {
     /// <summary>
-    /// Representar a localização da linha e 
-    /// coluna no tabuleiro. Esta classe é imutavél
-    /// pois tudo o que nela pertence é apenas de 
-    /// leitura. 
+    /// Representar a localização da linha e coluna no tabuleiro.
+    /// Esta classe é imutavél. Tudo o que nela pertence é apenas de leitura. 
     /// </summary>
     class Position
     {

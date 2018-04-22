@@ -6,6 +6,12 @@ using System.Threading.Tasks;
 
 namespace Simplexity
 {
+    /// <summary>
+    /// Junta todas as classes.
+    /// Imprime o board e o layout.
+    /// Cria o loop 'turnos' e o loop 'vez'
+    /// Pede input ao jogador e passa às outras classes.
+    /// </summary>
     class Program
     {
         // Opções de jogo

@@ -7,9 +7,8 @@ using System.Threading.Tasks;
 namespace Simplexity
 {
     /// <summary>
-    /// Esta classe é responsavél por verificar
-    /// se existe vitoria. A verificação é feita
-    /// na diagonal, horizontal e vertical.
+    /// verifica se existe vitória.
+    /// A verificação é feita na diagonal, horizontal e vertical.
     /// </summary>
     class WinChecker
     {

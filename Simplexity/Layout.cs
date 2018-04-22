@@ -7,7 +7,8 @@ using System.Threading.Tasks;
 namespace Simplexity
 {
     /// <summary>
-    /// Composta por 2 métodos, a classe Layout é responsável por desenhar as peças e tudo o que é proveniente da classe Board. 
+    /// Composta por 2 métodos.
+    /// É responsável por desenhar as peças e tudo o que é proveniente da classe Board. 
     /// </summary>
     class Layout
     {

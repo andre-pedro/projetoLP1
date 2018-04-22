@@ -7,7 +7,9 @@ using System.Threading.Tasks;
 namespace Simplexity
 {
     /// <summary>
-    /// 
+    /// Cria o player.
+    /// Cria todas as peças do jogo.
+    /// Trata do input e de alguns erros.
     /// </summary>
     class Player
     {

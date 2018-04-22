@@ -8,7 +8,9 @@ namespace Simplexity
 {
 
     /// <summary>
-    /// 
+    /// Cria o tabuleiro.
+    /// Cria colunas e linhas.
+    /// Verifica as colunas e as linhas.
     /// </summary>
     class Board
     {
@@ -18,7 +20,7 @@ namespace Simplexity
         public Player NextTurn { get; private set; }
 
         /// <summary>
-        /// cria o tamanho do tabuleiro
+        /// Cria o tamanho do tabuleiro
         /// </summary>
         public Board()
         {
