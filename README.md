@@ -1,4 +1,4 @@
-# Relatório Projecto LP1
+# Relatório Projecto LP1 - Simplexity
 
 
 
@@ -15,33 +15,39 @@
 
 ## Repartição de Tarefas
 
+O nosso trabalho foi repartido irmamente e trabalhámos em todos os parâmetros de forma unânime através do nosso [repositório do GitHub][rp]. Contudo, existiram certos aspectos em que cada um se focou mais. 
  * André Santos
-	* Item 1
-	* Item 2
+	* Criação das classes e as suas nomenclaturas 
+	* Verificação da relação entre classes
  * André Pedro
-	* Item 1
-	* Item 2
+	* Elaboração do Fluxograma e UML
+	* Estruturação e Redação do ficheiro README.md
  * Tiago Alves
-	* Item 1
-	* Item 2
+	* Tratamento das opções apresentadas ao jogador
+	* Resolução de Bugs
 
 
 ## Descrição da Solução
 
  * Arquitetura da Solução:
-	* De forma a simplificar a interpretação do nosso programa, separamos o código em diversas classes.
+	* De forma a simplificar a interpretação do nosso programa, separamos o código em diversas classes:
 		* A classe `Program` é responsável por inicializar o programa;
-		* É na classe `Board` `Layout` `Player` `Position` `State` `WinChecker`
+		* O `Board` cria um tabuleiro de 7x7 que representa a área em que o jogador pode colocar as peças;
+		* Já a classe `Layout` é responsável por desenhar as peças (mediante o input do jogador) e também os dados provenientes da classe `Board`;
+		* É na classe `Player` que estão localizadas as decisões que são apresentadas ao jogador, podendo escolher o tipo de peça (quadrado ou cilindro) e a posição a colocar da mesma. Encontra-se também um <i>loop</i> que impede jogadas inválidas (por exemplo, no caso de um jogador querer jogar a peça [1] e existirem 0 peças [1], é perguntado outra vez ao jogador qual peça ele quer jogar até este escolher uma peça válida;
+		* Em `State` encontram-se os tipos de peças (cubo e cilindro) que são posteriormente desenhadas no `Layout`. 
+		* `Position` é uma classe apenas de leitura, que representar a localização das linhas e colunas no tabuleiro. 
+		* Por último, `WinChecker` faz uma verificação vertical, horizontal e diagonal para detetar a presença de 4 peças iguais em sequência.
 		
-	em várias classes breve explicação de como o programa foi organizado e indicação das estruturas de dados
-	(para o tabuleiro de jogo, por exemplo) e algoritmos (para verificação da situação de vitória, por exemplo)
+	* breve explicação de como o programa foi organizado (check)
+	* indicação das estruturas de dados (para o tabuleiro de jogo, por exemplo) 
+	* e algoritmos (para verificação da situação de vitória, por exemplo)
 	utilizados.
 	* succ2
  * Fluxograma:
 
+	![Alt text](https://raw.githubusercontent.com/andre-pedro/projetoLP1/master/Fluxograma.svg?sanitize=true "Fluxograma do Projeto")
  * Diagrama UML:
-![Alt text](https://raw.githubusercontent.com/andre-pedro/projetoLP1/master/Fluxograma.svg?sanitize=true "Fluxograma do Projeto")
-
  
 ## Conclusões 
 
