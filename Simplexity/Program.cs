@@ -78,7 +78,7 @@ namespace Simplexity
                     Console.WriteLine();
                     // info vez do jogador 1 || 2
                     Console.ForegroundColor = ConsoleColor.Yellow;
-                    Console.Write("[!] ");
+                    Console.Write("[?] ");
                     Console.ForegroundColor = ConsoleColor.Gray;
                     Console.Write("Jogador ");
                     if (vez == 0)
@@ -96,7 +96,7 @@ namespace Simplexity
 
                         // info vez do jogador 1 || 2
                         Console.ForegroundColor = ConsoleColor.Yellow;
-                        Console.Write("[!] ");
+                        Console.Write("[?] ");
                         Console.ForegroundColor = ConsoleColor.Gray;
                         Console.Write("Jogador ");
                         Console.ForegroundColor = ConsoleColor.White;
@@ -120,7 +120,7 @@ namespace Simplexity
                         next = red.ColumnPosition(board);
                         // info vez do jogador 1 || 2
                         Console.ForegroundColor = ConsoleColor.Yellow;
-                        Console.Write("[!] ");
+                        Console.Write("[?] ");
                         Console.ForegroundColor = ConsoleColor.Gray;
                         Console.Write("Jogador ");
                         Console.ForegroundColor = ConsoleColor.Red;
