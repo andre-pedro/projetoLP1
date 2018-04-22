@@ -103,30 +103,9 @@ namespace Simplexity
                         Console.Write("Branco");
                         Console.ForegroundColor = ConsoleColor.Gray;
                         // pedir pecas
-<<<<<<< HEAD
+
                         estado = white.Escolhapecas(board, jogador);
                         board.SetState(next, estado);
-
-                        int full;
-                            full = 0;
-                            for (int i = 1; i <= 7; i++)
-                            {
-                                if (estado != State.Undecided)
-                                    ++full;
-                            
-                        }
-                          //  Console.WriteLine("full");
-                        if(full==7) Console.WriteLine("full");
-                        else board.SetState(next, estado);
-
-
-
-                        // board.SetState(next, estado);
-
-=======
-                            estado = white.Escolhapecas(board, jogador);
-                            board.SetState(next, estado);
->>>>>>> b1a1fc72af92f703e455f6330ab4ae95603c78b4
                     }
 
                     if (vez == 1)

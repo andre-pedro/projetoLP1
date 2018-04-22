@@ -38,10 +38,12 @@ namespace Simplexity
         }
 
         /// <summary>
-        /// 
+        /// Este metódo é responsavél pera a verificação
+        /// da coluna, ou seja aonde a peça que o jogador escolheu
+        /// irá ser inserida na coluna em questção.
         /// </summary>
-        /// <param name="position"></param>
-        /// <param name="newState"></param>
+        /// <param name="position">Coluna que jogador escolheu</param>
+        /// <param name="newState">Peça que jogador escolheu</param>
         public void SetState(Position position, State newState)
         {
             for (int i = 6; i >= 0; i--)
