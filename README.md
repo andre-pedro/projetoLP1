@@ -29,11 +29,11 @@
 ## Descrição da Solução
 
  * Arquitetura da Solução:
-	* De forma a simplificar a interpretação do nosso programa, separamos o código em diversas classes.
+	* De forma a simplificar a interpretação do nosso programa, separamos o código em diversas classes:
 		* A classe `Program` é responsável por inicializar o programa;
-		* A classe `Board` cria um tabuleiro de 7x7 que representa a área em que o jogador pode colocar as peças.
-		* Já a classe `Layout` é responsável por desenhar as peças (mediante o input do jogador) e também os dados provenientes da classe `Board`.
-		`Player`
+		* A classe `Board` cria um tabuleiro de 7x7 que representa a área em que o jogador pode colocar as peças;
+		* Já a classe `Layout` é responsável por desenhar as peças (mediante o input do jogador) e também os dados provenientes da classe `Board`;
+		* É na classe `Player` que estão localizadas as decisões que são apresentadas ao jogador, podendo escolher o tipo de peça (quadrado ou cilindro) e a posição a colocar da mesma;
 		`State` 
 		`Position`
 		`WinChecker`
