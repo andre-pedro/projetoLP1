@@ -30,6 +30,10 @@ namespace Simplexity
             Player red = new Player();
             State estado = new State();
 
+            //acrescentei isto, ver se funciona
+            WinChecker winChecker = new WinChecker();
+
+
             // Start
             Console.ForegroundColor = ConsoleColor.Gray;
             Console.Clear();
@@ -107,6 +111,7 @@ namespace Simplexity
 
                         estado = white.Escolhapecas(board, jogador);
                         board.SetState(next, estado);
+                    //    WinChecker.Wincheck(board, 1);
                     }
 
                     if (vez == 1)
@@ -130,7 +135,9 @@ namespace Simplexity
                         // pedir pecas
                             estado = red.Escolhapecas(board, jogador);
                             board.SetState(next, estado);
+                      //  WinChecker.Wincheck(next, 1);
                     }
+                    
                 }
                 if (cubosVermelhos == 0 && cubosBrancos == 0 && cilindrosVermelhos == 0 && cilindrosBrancos == 0)
                 {
@@ -140,6 +147,9 @@ namespace Simplexity
                     Console.WriteLine();
                     Environment.Exit(0);
                 }
+                //introduzir aqui a verificação de vitoria
+               
+
             }
         }
     }
