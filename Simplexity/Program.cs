@@ -110,7 +110,7 @@ namespace Simplexity
 
                         estado = white.Escolhapecas(board, jogador);
                         board.SetState(next, estado);
-                        WinChecker.Wincheck(board, 1);
+                    //    WinChecker.Wincheck(board, 1);
                     }
 
                     if (vez == 1)
@@ -134,7 +134,7 @@ namespace Simplexity
                         // pedir pecas
                             estado = red.Escolhapecas(board, jogador);
                             board.SetState(next, estado);
-                        WinChecker.Wincheck(next, 1);
+                      //  WinChecker.Wincheck(next, 1);
                     }
                     
                 }
