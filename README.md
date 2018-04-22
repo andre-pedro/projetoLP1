@@ -27,11 +27,15 @@
 
 
 ## Descrição da Solução
+
  * Arquitetura da Solução:
 	* succ1
 	* succ2
- * Diagrama UML:
  * Fluxograma:
+
+ * Diagrama UML:
+![Alt text](https://raw.githubusercontent.com/andre-pedro/projetoLP1/master/Fluxograma.svg?sanitize=true)
+
  
 ## Conclusões 
 
