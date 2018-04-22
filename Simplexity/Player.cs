@@ -75,7 +75,10 @@ namespace Simplexity
                 Console.ForegroundColor = ConsoleColor.Gray;
                 Console.Write("Sem cubos brancos. Reveja a sua jogada.");
                 Console.WriteLine();
-                Console.Write(" escolha entre Cubo [1] ou Cilindro [2]: ");
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.Write("[?] ");
+                Console.ForegroundColor = ConsoleColor.Gray;
+                Console.Write("Escolha entre Cubo [1] ou Cilindro [2]: ");
                 pecaescolhida = Convert.ToInt32(Console.ReadLine());
             }
             while (Program.jogador == 1 && Program.cilindrosBrancos == 0 && pecaescolhida == 2)
@@ -85,7 +88,10 @@ namespace Simplexity
                 Console.ForegroundColor = ConsoleColor.Gray;
                 Console.Write("Sem cilindros brancos. Reveja a sua jogada.");
                 Console.WriteLine();
-                Console.Write(" escolha entre Cubo [1] ou Cilindro [2]: ");
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.Write("[?] ");
+                Console.ForegroundColor = ConsoleColor.Gray;
+                Console.Write("Escolha entre Cubo [1] ou Cilindro [2]: ");
                 pecaescolhida = Convert.ToInt32(Console.ReadLine());
             }
             while (Program.jogador == 2 && Program.cubosVermelhos == 0 && pecaescolhida == 1)
@@ -95,7 +101,10 @@ namespace Simplexity
                 Console.ForegroundColor = ConsoleColor.Gray;
                 Console.Write("Sem cubos vermelhos. Reveja a sua jogada.");
                 Console.WriteLine();
-                Console.Write(" escolha entre Cubo [1] ou Cilindro [2]: ");
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.Write("[?] ");
+                Console.ForegroundColor = ConsoleColor.Gray;
+                Console.Write("Escolha entre Cubo [1] ou Cilindro [2]: ");
                 pecaescolhida = Convert.ToInt32(Console.ReadLine());
             }
             while (Program.jogador == 2 && Program.cilindrosVermelhos == 0 && pecaescolhida == 2)
@@ -105,7 +114,10 @@ namespace Simplexity
                 Console.ForegroundColor = ConsoleColor.Gray;
                 Console.Write("Sem cilindros vermelhos. Reveja a sua jogada.");
                 Console.WriteLine();
-                Console.Write(" escolha entre Cubo [1] ou Cilindro [2]: ");
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.Write("[?] ");
+                Console.ForegroundColor = ConsoleColor.Gray;
+                Console.Write("Escolha entre Cubo [1] ou Cilindro [2]: ");
                 pecaescolhida = Convert.ToInt32(Console.ReadLine());
             }
 

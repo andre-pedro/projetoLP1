@@ -9,8 +9,8 @@ namespace Simplexity
     class Program
     {
         // Opções de jogo
-        public static int cubosVermelhos = 11;
-        public static int cubosBrancos = 11;
+        public static int cubosVermelhos = 2;
+        public static int cubosBrancos = 2;
         public static int cilindrosVermelhos = 10;
         public static int cilindrosBrancos = 10;
         public static int jogador;

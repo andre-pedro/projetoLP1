@@ -17,8 +17,6 @@ namespace Simplexity
         private State[,] state;
         public Player NextTurn { get; private set; }
 
-
-
         /// <summary>
         /// cria o tamanho do tabuleiro
         /// </summary>
@@ -64,7 +62,7 @@ namespace Simplexity
                     Console.ForegroundColor = ConsoleColor.Gray;
                     Console.Write("Coluna cheia! A parar o jogo!");
                     Console.WriteLine();
-                    Environment.Exit(-1);
+                    Environment.Exit(1);
                 }
             }
         }
