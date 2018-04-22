@@ -42,6 +42,7 @@
 ## Referências
  * [Enunciado do Projeto][ref1]
  * Capítulo 20 do Livro "[The C# Player's Guide (3rd Edition)][ref2]"
+ * [Exercicio nº 8][ref3] do repositório [@VideojogosLusofona][ref4], em [Programação Orientada a Objetos][ref5]
  
 Curso:
 * [Licenciatura em Aplicações Multimédia e Videojogos][lamv]
@@ -59,3 +60,6 @@ Instituição:
 [rp]:https://github.com/andre-pedro/projetoLP1
 [ref1]:https://github.com/VideojogosLusofona/lp12017p1
 [ref2]:http://starboundsoftware.com/books/c-sharp/
+[ref3]:https://github.com/VideojogosLusofona/lp1_exercicios/blob/master/solucoes/03_poo/08.md
+[ref4]:https://github.com/VideojogosLusofona/
+[ref5]:https://github.com/VideojogosLusofona/lp1_exercicios/blob/master/solucoes/03_poo/
