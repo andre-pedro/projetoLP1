@@ -36,7 +36,7 @@ namespace Simplexity
                 if (board[1, i] != '!')
                     ++full;
             }
-
+            return 0;
         }
 
 
@@ -77,8 +77,9 @@ namespace Simplexity
         /// <returns></returns>
         public State Escolhapecas(Board board, int jogador)
         {
-        Console.Write(" escolha entre Cubo [1] ou Cilindro [2]: ");
-        int pecaescolhida = Convert.ToInt32(Console.ReadLine());
+            Console.ForegroundColor = ConsoleColor.Gray;
+            Console.Write(" escolha entre Cubo [1] ou Cilindro [2]: ");
+            int pecaescolhida = Convert.ToInt32(Console.ReadLine());
             // prevent play 0 pieces
 
             if (Program.jogador == 1 && Program.cubosBrancos == 0 && pecaescolhida == 1)
@@ -86,7 +87,7 @@ namespace Simplexity
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.Write("[!] ");
                 Console.ForegroundColor = ConsoleColor.White;
-                Console.Write("N");
+                Console.Write("Sem cubos brancos. Reveja a sua jogada.");
                 Console.WriteLine();
                 Escolhapecas(board, jogador);
             }
@@ -95,7 +96,7 @@ namespace Simplexity
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.Write("[!] ");
                 Console.ForegroundColor = ConsoleColor.White;
-                Console.Write("N");
+                Console.Write("Sem cilindros brancos. Reveja a sua jogada.");
                 Console.WriteLine();
                 Escolhapecas(board, jogador);
             }
@@ -104,7 +105,7 @@ namespace Simplexity
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.Write("[!] ");
                 Console.ForegroundColor = ConsoleColor.White;
-                Console.Write("N");
+                Console.Write("Sem cubos vermelhos. Reveja a sua jogada.");
                 Console.WriteLine();
                 Escolhapecas(board, jogador);
             }
@@ -113,7 +114,7 @@ namespace Simplexity
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.Write("[!] ");
                 Console.ForegroundColor = ConsoleColor.White;
-                Console.Write("N");
+                Console.Write("Sem cilindros vermelhos. Reveja a sua jogada.");
                 Console.WriteLine();
                 Escolhapecas(board, jogador);
             }
