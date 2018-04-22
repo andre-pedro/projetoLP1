@@ -12,6 +12,7 @@ namespace Simplexity
         public static int cubosBrancos = 11;
         public static int cilindrosVermelhos = 10;
         public static int cilindrosBrancos = 10;
+        public static int jogador;
 
         static void Main(string[] args)
         {
@@ -27,7 +28,6 @@ namespace Simplexity
             Player white = new Player();
             Player red = new Player();
             State estado = new State();
-            int jogador;
 
             // Start
             Console.ForegroundColor = ConsoleColor.Gray;
@@ -99,9 +99,10 @@ namespace Simplexity
                         Console.Write("Branco");
                         Console.ForegroundColor = ConsoleColor.Gray;
                         // pedir pecas
-                        estado = white.Escolhapecas(board, jogador);
-                        board.SetState(next, estado);
+                            estado = white.Escolhapecas(board, jogador);
+                            board.SetState(next, estado);
                     }
+
                     if (vez == 1)
                     {
                         jogador = 2;
@@ -121,8 +122,8 @@ namespace Simplexity
                         Console.Write("Vermelho");
                         Console.ForegroundColor = ConsoleColor.Gray;
                         // pedir pecas
-                        estado = red.Escolhapecas(board, jogador);
-                        board.SetState(next, estado);
+                            estado = red.Escolhapecas(board, jogador);
+                            board.SetState(next, estado);
                     }
                 }
                 if (cubosVermelhos == 0 && cubosBrancos == 0 && cilindrosVermelhos == 0 && cilindrosBrancos == 0)

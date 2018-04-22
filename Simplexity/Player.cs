@@ -67,28 +67,85 @@ namespace Simplexity
         {
         Console.Write(" escolha entre Cubo [1] ou Cilindro [2]: ");
         int pecaescolhida = Convert.ToInt32(Console.ReadLine());
-            if (pecaescolhida == 1 && jogador == 1)
+            // prevent play 0 pieces
+
+            if (Program.jogador == 1 && Program.cubosBrancos == 0 && pecaescolhida == 1)
             {
-                Program.cubosBrancos--;
-                Console.WriteLine(Program.cubosBrancos);
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.Write("[!] ");
+                Console.ForegroundColor = ConsoleColor.White;
+                Console.Write("N");
+                Console.WriteLine();
+                Escolhapecas(board, jogador);
             }
-            if (pecaescolhida == 2 && jogador == 1)
+            if (Program.jogador == 1 && Program.cilindrosBrancos == 0 && pecaescolhida == 2)
             {
-                Program.cilindrosBrancos--;
-                Console.WriteLine(Program.cilindrosBrancos);
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.Write("[!] ");
+                Console.ForegroundColor = ConsoleColor.White;
+                Console.Write("N");
+                Console.WriteLine();
+                Escolhapecas(board, jogador);
             }
-            if (pecaescolhida == 1 && jogador == 2)
+            if (Program.jogador == 2 && Program.cubosVermelhos == 0 && pecaescolhida == 1)
             {
-                Program.cubosVermelhos--;
-                Console.WriteLine(Program.cubosVermelhos);
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.Write("[!] ");
+                Console.ForegroundColor = ConsoleColor.White;
+                Console.Write("N");
+                Console.WriteLine();
+                Escolhapecas(board, jogador);
             }
-            if (pecaescolhida == 2 && jogador == 2)
+            if (Program.jogador == 2 && Program.cilindrosVermelhos == 0 && pecaescolhida == 2)
             {
-                Program.cilindrosVermelhos--;
-                Console.WriteLine(Program.cilindrosVermelhos);
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.Write("[!] ");
+                Console.ForegroundColor = ConsoleColor.White;
+                Console.Write("N");
+                Console.WriteLine();
+                Escolhapecas(board, jogador);
             }
-        State playerdecision = SetPecas(pecaescolhida, jogador);
-        return playerdecision;
+            else
+            {
+                if (pecaescolhida == 1 && jogador == 1)
+                {
+                    Program.cubosBrancos--;
+                    Console.WriteLine(Program.cubosBrancos);
+                }
+                if (pecaescolhida == 2 && jogador == 1)
+                {
+                    Program.cilindrosBrancos--;
+                    Console.WriteLine(Program.cilindrosBrancos);
+                }
+                if (pecaescolhida == 1 && jogador == 2)
+                {
+                    Program.cubosVermelhos--;
+                    Console.WriteLine(Program.cubosVermelhos);
+                }
+                if (pecaescolhida == 2 && jogador == 2)
+                {
+                    Program.cilindrosVermelhos--;
+                    Console.WriteLine(Program.cilindrosVermelhos);
+                }
+            }
+            if (Program.cubosBrancos < 0)
+            {
+                Program.cubosBrancos = 0;
+            }
+            if (Program.cubosVermelhos < 0)
+            {
+                Program.cubosVermelhos = 0;
+            }
+            if (Program.cilindrosBrancos < 0)
+            {
+                Program.cilindrosBrancos = 0;
+            }
+            if (Program.cilindrosVermelhos < 0)
+            {
+                Program.cilindrosVermelhos = 0;
+            }
+            State playerdecision = SetPecas(pecaescolhida, jogador);
+            return playerdecision;
         }
 
 
