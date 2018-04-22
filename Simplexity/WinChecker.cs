@@ -83,12 +83,10 @@ namespace Simplexity
                     count = 0;
 
 
+                    diagonal = i;
+                    /* diagcounter receives actual X */
+                    /* k is Y coord which cycles from actual position to end of row */
 
-
-
-
-                    diagonal = i; /* diagcounter receives actual X */
-                                  /* k is Y coord which cycles from actual position to end of row */
                     for (int k = j; k < array.GetLength(1); k++)
                     {
                         /* When diagcounter (X) value is offgrid, break cycle */
@@ -118,9 +116,6 @@ namespace Simplexity
                     }
                     /* Counter is reset before every verification */
                     count = 0;
-
-
-
 
 
 
