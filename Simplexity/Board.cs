@@ -57,6 +57,15 @@ namespace Simplexity
                 {
                     state[i, position.Coluna - 1] = state[i, position.Coluna - 1];
                 }
+                if (state[0, position.Coluna - 1] != State.Undecided)
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.Write("[!] ");
+                    Console.ForegroundColor = ConsoleColor.Gray;
+                    Console.Write("Coluna cheia! A parar o jogo!");
+                    Console.WriteLine();
+                    Environment.Exit(-1);
+                }
             }
         }
         

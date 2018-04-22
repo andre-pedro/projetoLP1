@@ -8,21 +8,22 @@ namespace Simplexity
 {
     class Program
     {
-        public static int cubosVermelhos = 2;
-        public static int cubosBrancos = 2;
+        // Opções de jogo
+        public static int cubosVermelhos = 11;
+        public static int cubosBrancos = 11;
         public static int cilindrosVermelhos = 10;
         public static int cilindrosBrancos = 10;
         public static int jogador;
 
         static void Main(string[] args)
         {
-            // Var. Misc
+            // Misc
             string s1 = "Projeto de Linguagens de Programação 2017/2018";
             string s2 = "André Pedro, André Santos e Tiago Alves";
             string s3 = "Nuno Fachada";
             string s4 = "Prima [ENTER] para começar...";
 
-            // Var. Board / layout /player
+            // Board / Layout / Player
             Board board = new Board();
             Layout layout = new Layout();
             Player white = new Player();
