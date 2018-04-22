@@ -124,7 +124,7 @@ namespace Simplexity
 
 
 
-                    /* Diagonal da direita para a esquerda diagonal (de baixo para cima) */
+                    /* Diagonal da direita para a esquerda (de baixo para cima) */
                     diagonal = i; /* diagcounter recebe o X atual */
                                   /* k e' a coordenada Y, que percorre da posicao atual ate ao fim da linha */
                     for (int k = j; k < array.GetLength(1); k++)
