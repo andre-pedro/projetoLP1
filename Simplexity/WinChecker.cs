@@ -53,7 +53,7 @@ namespace Simplexity
                         {
                             count = 0;
                         }
-                        /* Se o contador e' >= 4, quatro em linha e' encontrado */
+                        /* Se o contador e' >= 4, uma sequencia de 4 e' encontrada */
                         if (count >= 4)
                         {
                             teste = true;
@@ -77,7 +77,7 @@ namespace Simplexity
                         {
                             count = 0;
                         }
-                        /* Se o contador e' >= 4, quatro em linha e' encontrado */
+                        /* Se o contador e' >= 4, uma sequencia de 4 e' encontrada */
                         if (count >= 4)
                         {
                             teste = true;
@@ -89,19 +89,18 @@ namespace Simplexity
                     count = 0;
 
 
-                    diagonal = i;
-                    /* diagcounter receives actual X */
-                    /* k is Y coord which cycles from actual position to end of row */
+                    diagonal = i; /* diagcounter recebe do X atual */
+                    /* k e' a coordenada Y, que vai desde a posicao atual ate' ao fim da linha */
 
                     for (int k = j; k < array.GetLength(1); k++)
                     {
-                        /* When diagcounter (X) value is offgrid, break cycle */
+                        /* Quando o valor de diagcounter (X) esta' fora da grid, quebra o processo */
                         if (diagonal == array.GetLength(0))
                         {
                             break;
                         }
 
-                        /* If number at [X,Y] is equal to n, increment counter */
+                        /* Se o numero e' [X,Y] e igual a n, o contador incrementa */
                         if (array[diagonal, k] == n)
                         {
                             count++;
@@ -111,32 +110,32 @@ namespace Simplexity
                             count = 0;
                         }
 
-                        /* If counter is >= 4, four in line is found */
+                        /* Se o contador for >= 4, uma sequencia de 4 e' encontrada */
                         if (count >= 4)
                         {
                             teste = true;
                             break;
                         }
-                        /* diagcounter (X coord moves 1 to the right) */
+                        /* diagcounter (coordenada X move-se 1 posicao para a direita) */
                         diagonal++;
                     }
-                    /* Counter is reset before every verification */
+                    /* Contador e' reiniciado antes de cada verificacao */
                     count = 0;
 
 
 
-                    /* From right to left diagonal (upside down) */
-                    diagonal = i; /* diagcounter receives actual X */
-                                  /* k is Y coord which cycles from actual position to end of row */
+                    /* Diagonal da direita para a esquerda diagonal (de baixo para cima) */
+                    diagonal = i; /* diagcounter recebe o X atual */
+                                  /* k e' a coordenada Y, que percorre da posicao atual ate ao fim da linha */
                     for (int k = j; k < array.GetLength(1); k++)
                     {
-                        /* When diagcounter (X) value is offgrid, break cycle */
+                        /* Quando o valor diagcounter (X) esta' fora da grid, quebra o processo */
                         if (diagonal < 0)
                         {
                             break;
                         }
 
-                        /* If number at [X,Y] is equal to n, increment counter */
+                        /* Se o numero em [X,Y] for igual a n, o contador incrementa */
                         if (array[diagonal, k] == n)
                         {
                             count++;
@@ -146,13 +145,13 @@ namespace Simplexity
                             count = 0;
                         }
 
-                        /* If counter is >= 4, four in line is found */
+                        /* Se o contador for >= 4, uma sequencia de 4 e' encontrada */
                         if (count >= 4)
                         {
                             teste = true;
                             break;
                         }
-                        /* diagcounter (X coord moves 1 to the left) */
+                        /* diagcounter (coordenada X move-se 1 posicao para a esquerda) */
                         diagonal--;
                     }
                 }
