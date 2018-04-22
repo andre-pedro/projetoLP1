@@ -15,7 +15,8 @@
 
 ## Repartição de Tarefas
 
-O nosso trabalho foi repartido irmamente e trabalhámos em todos os parâmetros de forma unânime através do nosso [repositório do GitHub][rp]. Contudo, existiram certos aspectos em que cada um se focou mais. 
+O nosso trabalho foi repartido irmamente e trabalhámos em todos os parâmetros de forma unânime através do nosso [repositório do GitHub][rp].
+Contudo, existiram certos aspectos em que cada um se focou mais.
  * André Santos
 	* Criação das classes e as suas nomenclaturas 
 	* Verificação da relação entre classes
@@ -38,18 +39,15 @@ O nosso trabalho foi repartido irmamente e trabalhámos em todos os parâmetros 
 		* Em `State` encontram-se os tipos de peças (cubo e cilindro) que são posteriormente desenhadas no `Layout`. 
 		* `Position` é uma classe apenas de leitura, que representar a localização das linhas e colunas no tabuleiro. 
 		* Por último, `WinChecker` faz uma verificação vertical, horizontal e diagonal para detetar a presença de 4 peças iguais em sequência.
-		
-	* breve explicação de como o programa foi organizado (check)
-	* indicação das estruturas de dados (para o tabuleiro de jogo, por exemplo) 
-	* e algoritmos (para verificação da situação de vitória, por exemplo)
-	utilizados.
-	* succ2
+
  * Fluxograma:
 
 	![Alt text](https://raw.githubusercontent.com/andre-pedro/projetoLP1/master/Fluxograma.svg?sanitize=true "Fluxograma do Projeto")
  * Diagrama UML:
+	![Alt text](https://github.com/andre-pedro/projetoLP1/blob/master/UML.svg)
  
 ## Conclusões 
+Com este trabalho aprendemos a criar diversas classes e a dividir o código de forma a dinamizar a interpretação do mesmo. 
 
 ## Referências
  * [Enunciado do Projeto][ref1]
