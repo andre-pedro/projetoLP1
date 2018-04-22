@@ -31,6 +31,9 @@ namespace Simplexity
                         break;
 
                     count = 0;
+
+
+
                     //Horizontal verification 
                     /* k is X coord which cycles from actual position to end of row */
                     for (int k = i; k < array.GetLength(0); k++)
@@ -51,6 +54,9 @@ namespace Simplexity
                             break;
                         }
                     }
+
+
+
 
                     /* Vertical verification */
                     /* k is Y coord which cycles from actual position to end of row */
@@ -75,68 +81,79 @@ namespace Simplexity
 
                     /* Counter is reset before every verification */
                     count = 0;
-                }
-                diagonal = i; /* diagcounter receives actual X */
-                              /* k is Y coord which cycles from actual position to end of row */
-                for (int k = j; k < array.GetLength(1); k++)
-                {
-                    /* When diagcounter (X) value is offgrid, break cycle */
-                    if (diagonal == array.GetLength(0))
-                    {
-                        break;
-                    }
 
-                    /* If number at [X,Y] is equal to n, increment counter */
-                    if (array[diagonal, k] == n)
-                    {
-                        count++;
-                    }
-                    else
-                    {
-                        count = 0;
-                    }
 
-                    /* If counter is >= 4, four in line is found */
-                    if (count >= 4)
-                    {
-                        teste = true;
-                        break;
-                    }
-                    /* diagcounter (X coord moves 1 to the right) */
-                    diagonal++;
-                }
-                /* Counter is reset before every verification */
-                count = 0;
 
-                /* From right to left diagonal (upside down) */
-                diagonal = i; /* diagcounter receives actual X */
-                              /* k is Y coord which cycles from actual position to end of row */
-                for (int k = j; k < array.GetLength(1); k++)
-                {
-                    /* When diagcounter (X) value is offgrid, break cycle */
-                    if (diagonal < 0)
-                    {
-                        break;
-                    }
 
-                    /* If number at [X,Y] is equal to n, increment counter */
-                    if (array[diagonal, k] == n)
-                    {
-                        count++;
-                    }
-                    else
-                    {
-                        count = 0;
-                    }
 
-                    /* If counter is >= 4, four in line is found */
-                    if (count >= 4)
+
+                    diagonal = i; /* diagcounter receives actual X */
+                                  /* k is Y coord which cycles from actual position to end of row */
+                    for (int k = j; k < array.GetLength(1); k++)
                     {
-                        teste = true;
-                        break;
+                        /* When diagcounter (X) value is offgrid, break cycle */
+                        if (diagonal == array.GetLength(0))
+                        {
+                            break;
+                        }
+
+                        /* If number at [X,Y] is equal to n, increment counter */
+                        if (array[diagonal, k] == n)
+                        {
+                            count++;
+                        }
+                        else
+                        {
+                            count = 0;
+                        }
+
+                        /* If counter is >= 4, four in line is found */
+                        if (count >= 4)
+                        {
+                            teste = true;
+                            break;
+                        }
+                        /* diagcounter (X coord moves 1 to the right) */
+                        diagonal++;
                     }
-                    /* diagcounter (X coord moves 1 to the left) */
-                    diagonal--;
+                    /* Counter is reset before every verification */
+                    count = 0;
+
+
+
+
+
+
+                    /* From right to left diagonal (upside down) */
+                    diagonal = i; /* diagcounter receives actual X */
+                                  /* k is Y coord which cycles from actual position to end of row */
+                    for (int k = j; k < array.GetLength(1); k++)
+                    {
+                        /* When diagcounter (X) value is offgrid, break cycle */
+                        if (diagonal < 0)
+                        {
+                            break;
+                        }
+
+                        /* If number at [X,Y] is equal to n, increment counter */
+                        if (array[diagonal, k] == n)
+                        {
+                            count++;
+                        }
+                        else
+                        {
+                            count = 0;
+                        }
+
+                        /* If counter is >= 4, four in line is found */
+                        if (count >= 4)
+                        {
+                            teste = true;
+                            break;
+                        }
+                        /* diagcounter (X coord moves 1 to the left) */
+                        diagonal--;
+                    }
                 }
             }
             return teste;
