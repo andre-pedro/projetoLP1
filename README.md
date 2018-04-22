@@ -15,7 +15,7 @@
 
 ## Repartição de Tarefas
 
-O nosso trabalho foi repartido irmamente e trabalhámos de forma unânime através do nosso [repositório do GitHub][rp]. Contudo, existiram certos aspectos em que cada um se focou mais. 
+O nosso trabalho foi repartido irmamente e trabalhámos em todos os parâmetros de forma unânime através do nosso [repositório do GitHub][rp]. Contudo, existiram certos aspectos em que cada um se focou mais. 
  * André Santos
 	* Criação das classes e as suas nomenclaturas 
 	* Verificação da relação entre classes
