@@ -13,6 +13,12 @@ namespace Simplexity
     /// </summary>
     class WinChecker
     {
+        /// <summary>
+        /// Metódo de verificação da vitoria
+        /// </summary>
+        /// <param name="array">linhas e colunas do tabuleiro</param>
+        /// <param name="n">pelas a verificar</param>
+        /// <returns></returns>
         public bool Wincheck(int[,] array, int n)
         {
             bool teste;
@@ -20,7 +26,7 @@ namespace Simplexity
             int count;
             int diagonal;
 
-
+            
             //verifica no array bidimensional
             for (int i = 0; i < array.GetLength(0); i++)
             {
@@ -34,8 +40,8 @@ namespace Simplexity
 
 
 
-                    //Horizontal verification 
-                    /* k is X coord which cycles from actual position to end of row */
+                    
+
                     for (int k = i; k < array.GetLength(0); k++)
                     {
                         /* If number at [X,Y] is equal to n, increment counter */
@@ -158,8 +164,6 @@ namespace Simplexity
             }
             return teste;
         }
-
-
     }
 }
 
