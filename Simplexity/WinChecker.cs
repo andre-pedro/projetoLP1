@@ -44,7 +44,7 @@ namespace Simplexity
 
                     for (int k = i; k < array.GetLength(0); k++)
                     {
-                        /* If number at [X,Y] is equal to n, increment counter */
+                        /* Se o numero em [X,Y] e' igual a n, o contador incrementa */
                         if (array[k, j] == n)
                         {
                             count++;
@@ -53,7 +53,7 @@ namespace Simplexity
                         {
                             count = 0;
                         }
-                        /* If counter is >= 4, four in line is found */
+                        /* Se o contador e' >= 4, quatro em linha e' encontrado */
                         if (count >= 4)
                         {
                             teste = true;
@@ -64,11 +64,11 @@ namespace Simplexity
 
 
 
-                    /* Vertical verification */
-                    /* k is Y coord which cycles from actual position to end of row */
+                    /* Verificacao Vertical */
+                    /* k e' a coordenada Y que vai desde a posicao atual ao fim da linha */
                     for (int k = j; k < array.GetLength(1); k++)
                     {
-                        /* If number at [X,Y] is equal to n, increment counter */
+                        /* Se o numero em [X,Y] e' igual a n, o contador incrementa */
                         if (array[i, k] == n)
                         {
                             count++;
@@ -77,7 +77,7 @@ namespace Simplexity
                         {
                             count = 0;
                         }
-                        /* If counter is >= 4, four in line is found */
+                        /* Se o contador e' >= 4, quatro em linha e' encontrado */
                         if (count >= 4)
                         {
                             teste = true;
@@ -85,7 +85,7 @@ namespace Simplexity
                         }
                     }
 
-                    /* Counter is reset before every verification */
+                    /* O Contador e' reiniciado antes de cada verificacao */
                     count = 0;
 
 
