@@ -1,4 +1,4 @@
-# Relatório Projecto LP1
+# Relatório Projecto LP1 - Simplexity
 
 
 
@@ -46,9 +46,8 @@ O nosso trabalho foi repartido irmamente e trabalhámos de forma unânime atrav�
 	* succ2
  * Fluxograma:
 
+	![Alt text](https://raw.githubusercontent.com/andre-pedro/projetoLP1/master/Fluxograma.svg?sanitize=true "Fluxograma do Projeto")
  * Diagrama UML:
-![Alt text](https://raw.githubusercontent.com/andre-pedro/projetoLP1/master/Fluxograma.svg?sanitize=true "Fluxograma do Projeto")
-
  
 ## Conclusões 
 
