@@ -41,6 +41,7 @@ namespace Simplexity
             Console.Write(s4.PadLeft(s4.Length + 0));
             Console.ReadKey();
 
+
             // Turnos
             for (int turno = 0; turno <= 1000; turno++)
             {
@@ -88,8 +89,11 @@ namespace Simplexity
                         Console.ForegroundColor = ConsoleColor.Gray;
                         // play
                         Position next;
+
                         // pedir colunas
                         next = white.ColumnPosition(board);
+
+
                         // info vez do jogador 1 || 2
                         Console.ForegroundColor = ConsoleColor.Yellow;
                         Console.Write("[!] ");
@@ -99,8 +103,9 @@ namespace Simplexity
                         Console.Write("Branco");
                         Console.ForegroundColor = ConsoleColor.Gray;
                         // pedir pecas
-                            estado = white.Escolhapecas(board, jogador);
-                            board.SetState(next, estado);
+
+                        estado = white.Escolhapecas(board, jogador);
+                        board.SetState(next, estado);
                     }
 
                     if (vez == 1)
