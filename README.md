@@ -36,7 +36,7 @@
 ## Conclusões 
 
 ## Referências
- * [referencia 1][ref1]
+ * [Enunciado do Projeto][ref1]
  
 Curso:
 * [Licenciatura em Aplicações Multimédia e Videojogos][lamv]
@@ -52,4 +52,4 @@ Instituição:
 [lamv]:https://www.ulusofona.pt/licenciatura/aplicacoes-multimedia-e-videojogos
 [ULHT]:https://www.ulusofona.pt/
 [rp]:https://github.com/andre-pedro/projetoLP1
-[ref1]:https://github.com/VideojogosLusofona/
+[ref1]:https://github.com/VideojogosLusofona/lp12017p1
