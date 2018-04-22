@@ -14,7 +14,7 @@ namespace Simplexity
     {
         //var de instancia  da class State que  cria 
         //um array
-        private State[,] state;
+        public static State[,] state;
         public Player NextTurn { get; private set; }
 
         /// <summary>
@@ -65,8 +65,6 @@ namespace Simplexity
                     Environment.Exit(1);
                 }
             }
-        }
-        
-        
+        }   
     }
 }

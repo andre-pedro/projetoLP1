@@ -85,7 +85,6 @@ namespace Simplexity
 
 
 
-
                     for (int k = i; k < array.GetLength(0); k++)
                     {
                         /* Se o numero em [X,Y] e' igual a n, o contador incrementa */
