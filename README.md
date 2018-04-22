@@ -31,7 +31,12 @@
  * Arquitetura da Solução:
 	* De forma a simplificar a interpretação do nosso programa, separamos o código em diversas classes.
 		* A classe `Program` é responsável por inicializar o programa;
-		* É na classe `Board` `Layout` `Player` `Position` `State` `WinChecker`
+		* A classe `Board` cria um tabuleiro de 7x7 que representa a área em que o jogador pode colocar as peças.
+		* Já a classe `Layout` é responsável por desenhar as peças (mediante o input do jogador) e também os dados provenientes da classe `Board`.
+		`Player`
+		`State` 
+		`Position`
+		`WinChecker`
 		
 	em várias classes breve explicação de como o programa foi organizado e indicação das estruturas de dados
 	(para o tabuleiro de jogo, por exemplo) e algoritmos (para verificação da situação de vitória, por exemplo)
