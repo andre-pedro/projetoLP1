@@ -6,6 +6,11 @@ using System.Threading.Tasks;
 
 namespace Simplexity
 {
+    /// <summary>
+    /// Esta classe é responsavél por verificar
+    /// se existe vitoria. A verificação é feita
+    /// na diagonal, horizontal e vertical.
+    /// </summary>
     class WinChecker
     {
         public bool Wincheck(int[,] array, int n)
@@ -21,8 +26,7 @@ namespace Simplexity
                 for(int j=0; j<array.GetLength(1);j++)
                 {
                     if (teste == true)
-                        break;
-                    
+                        break;  
                 }
                 count = 0;
             }
