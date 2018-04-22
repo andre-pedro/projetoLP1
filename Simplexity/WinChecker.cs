@@ -63,7 +63,7 @@ namespace Simplexity
         /// <param name="array">linhas e colunas do tabuleiro</param>
         /// <param name="n">pelas a verificar</param>
         /// <returns></returns>
-        public bool Wincheck(Board board, int n)
+        public bool Wincheck(int[,] array, int n)
         {
             bool teste;
             teste = false;
