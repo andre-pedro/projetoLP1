@@ -26,16 +26,23 @@ namespace Simplexity
         private bool CheckForWin(Board board, State player)
         {
             for (int row = 0; row < 7; row++)
+            {
                 if (AreAll(board, new Position[] { new Position(row, 0), new Position(row, 1), new Position(row, 2), new Position(row, 3), }, player))
                     return true;
+            }
+
             for (int column = 0; column < 7; column++)
+            {
                 if (AreAll(board, new Position[] { new Position(column, 0), new Position(column, 1), new Position(column, 2), new Position(column, 3), }, player))
                     return true;
+            }
 
             if (AreAll(board, new Position[] { new Position(0, 0), new Position(1, 1), new Position(2, 2), new Position(3, 3), new Position(4, 4), new Position(5, 5), new Position(6, 6) }, player))
                 return true;
+
             if (AreAll(board, new Position[] { new Position(6, 0), new Position(5, 1), new Position(4, 2), new Position(3, 3), new Position(2, 4), new Position(1, 5), new Position(0, 6), }, player))
                 return false;
+            return false;
         }
 
         private bool AreAll(Board board, Position[] positions, State state)
