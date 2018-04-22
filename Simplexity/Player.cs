@@ -77,9 +77,8 @@ namespace Simplexity
         /// <returns></returns>
         public State Escolhapecas(Board board, int jogador)
         {
-            Console.ForegroundColor = ConsoleColor.Gray;
-            Console.Write(" escolha entre Cubo [1] ou Cilindro [2]: ");
-            int pecaescolhida = Convert.ToInt32(Console.ReadLine());
+        Console.Write(" escolha entre Cubo [1] ou Cilindro [2]: ");
+        int pecaescolhida = Convert.ToInt32(Console.ReadLine());
             // prevent play 0 pieces
 
             if (Program.jogador == 1 && Program.cubosBrancos == 0 && pecaescolhida == 1)
