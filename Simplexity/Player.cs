@@ -27,6 +27,18 @@ namespace Simplexity
             return coordenada;
         }
 
+        private int FullCollumn(char[,] board)
+        {
+            int full;
+            full = 0;
+            for (int i=1; i<=7;i++)
+            {
+                if (board[1, i] != '!')
+                    ++full;
+            }
+
+        }
+
 
         /// <summary>
         /// 
