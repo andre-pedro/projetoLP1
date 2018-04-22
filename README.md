@@ -37,6 +37,7 @@
 
 ## Referências
  * [Enunciado do Projeto][ref1]
+ * Capítulo 20 do Livro "[The C# Player's Guide (3rd Edition)][ref2]"
  
 Curso:
 * [Licenciatura em Aplicações Multimédia e Videojogos][lamv]
@@ -53,3 +54,4 @@ Instituição:
 [ULHT]:https://www.ulusofona.pt/
 [rp]:https://github.com/andre-pedro/projetoLP1
 [ref1]:https://github.com/VideojogosLusofona/lp12017p1
+[ref2]:http://starboundsoftware.com/books/c-sharp/
