@@ -15,15 +15,16 @@
 
 ## Repartição de Tarefas
 
+O nosso trabalho foi repartido irmamente e trabalhámos de forma unânime através do nosso [repositório do GitHub][rp]. Contudo, existiram certos aspectos em que cada um se focou mais. 
  * André Santos
-	* Item 1
-	* Item 2
+	* Criação das classes e as suas nomenclaturas 
+	* Verificação da relação entre classes
  * André Pedro
-	* Item 1
-	* Item 2
+	* Elaboração do Fluxograma e UML
+	* Estruturação e Redação do ficheiro README.md
  * Tiago Alves
-	* Item 1
-	* Item 2
+	* Tratamento das opções apresentadas ao jogador
+	* Resolução de Bugs
 
 
 ## Descrição da Solução
@@ -38,8 +39,9 @@
 		* `Position` é uma classe apenas de leitura, que representar a localização das linhas e colunas no tabuleiro. 
 		* Por último, `WinChecker` faz uma verificação vertical, horizontal e diagonal para detetar a presença de 4 peças iguais em sequência.
 		
-	em várias classes breve explicação de como o programa foi organizado e indicação das estruturas de dados
-	(para o tabuleiro de jogo, por exemplo) e algoritmos (para verificação da situação de vitória, por exemplo)
+	* breve explicação de como o programa foi organizado (check)
+	* indicação das estruturas de dados (para o tabuleiro de jogo, por exemplo) 
+	* e algoritmos (para verificação da situação de vitória, por exemplo)
 	utilizados.
 	* succ2
  * Fluxograma:
