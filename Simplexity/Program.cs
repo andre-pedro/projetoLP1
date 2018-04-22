@@ -8,6 +8,11 @@ namespace Simplexity
 {
     class Program
     {
+        public static int cubosVermelhos = 11;
+        public static int cubosBrancos = 11;
+        public static int cilindrosVermelhos = 10;
+        public static int cilindrosBrancos = 10;
+
         static void Main(string[] args)
         {
             // Var. Misc
@@ -23,10 +28,6 @@ namespace Simplexity
             Player red = new Player();
             State estado = new State();
             int jogador;
-            int cubosVermelhos = 11;
-            int cubosBrancos = 11;
-            int cilindrosVermelhos = 10;
-            int cilindrosBrancos = 10;
 
             // Start
             Console.ForegroundColor = ConsoleColor.Gray;
@@ -81,12 +82,12 @@ namespace Simplexity
                     Console.Write("Jogador ");
                     if (vez == 0)
                     {
+                        jogador = 1;
                         Console.ForegroundColor = ConsoleColor.White;
                         Console.Write("Branco");
                         Console.ForegroundColor = ConsoleColor.Gray;
                         // play
                         Position next;
-                        jogador = 1;
                         // pedir colunas
                         next = white.ColumnPosition(board);
                         // info vez do jogador 1 || 2
@@ -103,12 +104,12 @@ namespace Simplexity
                     }
                     if (vez == 1)
                     {
+                        jogador = 2;
                         Console.ForegroundColor = ConsoleColor.Red;
                         Console.Write("Vermelho");
                         Console.ForegroundColor = ConsoleColor.Gray;
                         // play
                         Position next;
-                        jogador = 2;
                         // pedir colunas
                         next = red.ColumnPosition(board);
                         // info vez do jogador 1 || 2
@@ -123,6 +124,14 @@ namespace Simplexity
                         estado = red.Escolhapecas(board, jogador);
                         board.SetState(next, estado);
                     }
+                }
+                if (cubosVermelhos == 0 && cubosBrancos == 0 && cilindrosVermelhos == 0 && cilindrosBrancos == 0)
+                {
+                    Console.ForegroundColor = ConsoleColor.Gray;
+                    Console.Clear();
+                    Console.WriteLine("Fim de jogo: Empate!");
+                    Console.WriteLine();
+                    Environment.Exit(0);
                 }
             }
         }

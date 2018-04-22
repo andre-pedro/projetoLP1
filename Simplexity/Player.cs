@@ -17,6 +17,8 @@ namespace Simplexity
         /// </summary>
         /// <param name="board"></param>
         /// <returns>a coordenada em que o jogador quer jogar </returns>
+        ///
+
         public Position ColumnPosition(Board board)
         {
             Console.Write(" escolha a coluna onde quer jogar: ");
@@ -63,10 +65,30 @@ namespace Simplexity
         /// <returns></returns>
         public State Escolhapecas(Board board, int jogador)
         {
-            Console.Write(" escolha entre Cubo [1] ou Cilindro [2]: ");
-            int pecaescolhida = Convert.ToInt32(Console.ReadLine());
-            State playerdecision = SetPecas(pecaescolhida, jogador);
-            return playerdecision;
+        Console.Write(" escolha entre Cubo [1] ou Cilindro [2]: ");
+        int pecaescolhida = Convert.ToInt32(Console.ReadLine());
+            if (pecaescolhida == 1 && jogador == 1)
+            {
+                Program.cubosBrancos--;
+                Console.WriteLine(Program.cubosBrancos);
+            }
+            if (pecaescolhida == 2 && jogador == 1)
+            {
+                Program.cilindrosBrancos--;
+                Console.WriteLine(Program.cilindrosBrancos);
+            }
+            if (pecaescolhida == 1 && jogador == 2)
+            {
+                Program.cubosVermelhos--;
+                Console.WriteLine(Program.cubosVermelhos);
+            }
+            if (pecaescolhida == 2 && jogador == 2)
+            {
+                Program.cilindrosVermelhos--;
+                Console.WriteLine(Program.cilindrosVermelhos);
+            }
+        State playerdecision = SetPecas(pecaescolhida, jogador);
+        return playerdecision;
         }
 
 
