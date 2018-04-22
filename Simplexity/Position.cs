@@ -7,8 +7,10 @@ using System.Threading.Tasks;
 namespace Simplexity
 {
     /// <summary>
-    /// Esta classe irá representar a localização
-    /// da linha e coluna no tabuleiro
+    /// Representar a localização da linha e 
+    /// coluna no tabuleiro. Esta classe é imutavél
+    /// pois tudo o que nela pertence é apenas de 
+    /// leitura. 
     /// </summary>
     class Position
     {
@@ -18,10 +20,14 @@ namespace Simplexity
 
 
         /// <summary>
-        /// 
+        /// Existem dois constructores "Overload"
+        /// nesta classe, enquanto o primeiro recebe linha 
+        /// e coluna para poder desenhar, a outra recebe 
+        /// só o parametro de coluna para podermos inserir 
+        /// a jogada consoante a escolha do jogador 
         /// </summary>
-        /// <param name="linha"></param>
-        /// <param name="coluna"></param>
+        /// <param name="linha">linha no tabuleiro</param>
+        /// <param name="coluna">coluna no tabuleiro</param>
         public Position(int linha, int coluna)
         {
             Linha = linha;
